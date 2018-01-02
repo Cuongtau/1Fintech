@@ -1,0 +1,636 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AccSalerNotExits" xml:space="preserve">
+    <value>Invalid VTC Pay Account.  Please check the data</value>
+  </data>
+  <data name="Address" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="Bank" xml:space="preserve">
+    <value>Bank</value>
+  </data>
+  <data name="BuyerEmail" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="BuyerName" xml:space="preserve">
+    <value>Buyer information</value>
+  </data>
+  <data name="BuyerPhone" xml:space="preserve">
+    <value>Mobile Phone</value>
+  </data>
+  <data name="DataTransferInvalid" xml:space="preserve">
+    <value>Data transmission is not valid. Please check the data</value>
+  </data>
+  <data name="DeliveryAddresss" xml:space="preserve">
+    <value>Delivery address</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="ErrorCreateOrder" xml:space="preserve">
+    <value>Error create order. Please try again</value>
+  </data>
+  <data name="eWallet" xml:space="preserve">
+    <value>eWallet</value>
+  </data>
+  <data name="internationalPayment" xml:space="preserve">
+    <value>Organization of international payment</value>
+  </data>
+  <data name="LessAccPGSaler" xml:space="preserve">
+    <value>You have to enter the seller VTC Pay Account</value>
+  </data>
+  <data name="LessEBankLogin" xml:space="preserve">
+    <value>You have to transfer the VTC login Account</value>
+  </data>
+  <data name="LessPhone" xml:space="preserve">
+    <value>You have to enter phone number</value>
+  </data>
+  <data name="LessWebsiteID" xml:space="preserve">
+    <value>You have to tranfer websiteID</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="NoSelectPaymentType" xml:space="preserve">
+    <value>You  have to select the payment type</value>
+  </data>
+  <data name="Note" xml:space="preserve">
+    <value>Please select a payment method below to continue. The total payment for each payment method are shown below each logo. For detailed payment instructions, please see &lt;a href="#"&gt; here ...&lt;/a&gt;</value>
+  </data>
+  <data name="NotRate" xml:space="preserve">
+    <value>Not rated</value>
+  </data>
+  <data name="NotSupportTypePayment" xml:space="preserve">
+    <value>You could not use this payment type. Please contact us for supportation</value>
+  </data>
+  <data name="NotVerify" xml:space="preserve">
+    <value>Not verify</value>
+  </data>
+  <data name="OrderCode" xml:space="preserve">
+    <value>Order Code</value>
+  </data>
+  <data name="PaymentFail" xml:space="preserve">
+    <value>Fail Payment</value>
+  </data>
+  <data name="PaymentGate" xml:space="preserve">
+    <value>ONLINE PAYMENT GATE</value>
+  </data>
+  <data name="PaymentSuccess" xml:space="preserve">
+    <value>Payment Success</value>
+  </data>
+  <data name="PaymentType" xml:space="preserve">
+    <value>Payment type</value>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>Account</value>
+  </data>
+  <data name="PhoneNotValid" xml:space="preserve">
+    <value>Invalid Buyer's phone</value>
+  </data>
+  <data name="PhonsesSame" xml:space="preserve">
+    <value>Buyer's account and seller's account have to be different</value>
+  </data>
+  <data name="Price" xml:space="preserve">
+    <value>Price</value>
+  </data>
+  <data name="Rate" xml:space="preserve">
+    <value>Prestige</value>
+  </data>
+  <data name="SalerStatus" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Payment order</value>
+  </data>
+  <data name="TitleSeo" xml:space="preserve">
+    <value>payment of invoices, orders, select the payment method</value>
+  </data>
+  <data name="ToolTipBuyerPhone_Text" xml:space="preserve">
+    <value>Bạn cần điền chính xác số điện thoại của bạn để nhận được tiền trong trường hợp giao dịch không thành công</value>
+  </data>
+  <data name="Verify" xml:space="preserve">
+    <value>Verify</value>
+  </data>
+  <data name="VTCeBank" xml:space="preserve">
+    <value>VTC eBank</value>
+  </data>
+  <data name="WrongSignature" xml:space="preserve">
+    <value>The signature is incorrect or has expired</value>
+  </data>
+  <data name="AddressInfo" xml:space="preserve">
+    <value>Address: 23 Lac Trung,Hai Ba Trung,Ha Noi</value>
+  </data>
+  <data name="AvailableBalances" xml:space="preserve">
+    <value>Enable balances</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="ChipsetCode" xml:space="preserve">
+    <value>Chipset code</value>
+  </data>
+  <data name="ExpriedDate" xml:space="preserve">
+    <value>Expried date</value>
+  </data>
+  <data name="ForgotPass" xml:space="preserve">
+    <value>Forgot password</value>
+  </data>
+  <data name="Hold3day" xml:space="preserve">
+    <value>Holding 3-days</value>
+  </data>
+  <data name="Hold5day" xml:space="preserve">
+    <value>Holding 5-days</value>
+  </data>
+  <data name="Hold7day" xml:space="preserve">
+    <value>Holding 7-days</value>
+  </data>
+  <data name="Infomation" xml:space="preserve">
+    <value>Information</value>
+  </data>
+  <data name="MessageIf" xml:space="preserve">
+    <value>If your VTC Pay e-Wallet attacted Internaltional cards.Please select </value>
+  </data>
+  <data name="MessageNote" xml:space="preserve">
+    <value>Payment amount is included all transaction fees</value>
+  </data>
+  <data name="MessagePhoneForRefund" xml:space="preserve">
+    <value>Mobile phone is used for refund</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>Next</value>
+  </data>
+  <data name="OrderInfomation" xml:space="preserve">
+    <value>Order infomation</value>
+  </data>
+  <data name="Pass" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="Payment" xml:space="preserve">
+    <value>Payment</value>
+  </data>
+  <data name="PaymentBalanceWallet" xml:space="preserve">
+    <value>Payment via e-Wallet's balance</value>
+  </data>
+  <data name="PaymentBankWallet" xml:space="preserve">
+    <value>Payment via Bank-card Wallet</value>
+  </data>
+  <data name="PaymentImmediate" xml:space="preserve">
+    <value>Payment immediately</value>
+  </data>
+  <data name="PaymentInterCard" xml:space="preserve">
+    <value>Payment via Internationnal Card</value>
+  </data>
+  <data name="PaymentMethod" xml:space="preserve">
+    <value>Payment method</value>
+  </data>
+  <data name="PaymentViaInBanks" xml:space="preserve">
+    <value>Payment via Domestic Banks</value>
+  </data>
+  <data name="PhoneNumber" xml:space="preserve">
+    <value>Mobile phone</value>
+  </data>
+  <data name="ProviderInfo" xml:space="preserve">
+    <value>Provider information</value>
+  </data>
+  <data name="Quantity" xml:space="preserve">
+    <value>Quantity</value>
+  </data>
+  <data name="Register" xml:space="preserve">
+    <value>Register</value>
+  </data>
+  <data name="SelectPayment" xml:space="preserve">
+    <value>Please! Select a Payment method</value>
+  </data>
+  <data name="ServiceCode" xml:space="preserve">
+    <value>Service code</value>
+  </data>
+  <data name="ServiceInfo" xml:space="preserve">
+    <value>Service information</value>
+  </data>
+  <data name="ServicePack" xml:space="preserve">
+    <value>Service pack</value>
+  </data>
+  <data name="SettopBoxType" xml:space="preserve">
+    <value>Settop box type</value>
+  </data>
+  <data name="TitleComment" xml:space="preserve">
+    <value>As VND balance  in account from the previous extension</value>
+  </data>
+  <data name="TotalPayment" xml:space="preserve">
+    <value>Total amount</value>
+  </data>
+  <data name="UserSubscribers" xml:space="preserve">
+    <value>User subscribers</value>
+  </data>
+  <data name="Wallet" xml:space="preserve">
+    <value>VTC Pay e-Wallet</value>
+  </data>
+  <data name="AccountVTC" xml:space="preserve">
+    <value> VTC Account</value>
+  </data>
+  <data name="AddCard" xml:space="preserve">
+    <value>Add card</value>
+  </data>
+  <data name="Balance" xml:space="preserve">
+    <value>Balance</value>
+  </data>
+  <data name="BankCardWallet" xml:space="preserve">
+    <value>Bank-card wallet</value>
+  </data>
+  <data name="CardCode" xml:space="preserve">
+    <value>Card code</value>
+  </data>
+  <data name="Footer1" xml:space="preserve">
+    <value>VTC Corporation. All rights reserved.</value>
+  </data>
+  <data name="Footer2" xml:space="preserve">
+    <value>15th floor VTC Building,23 Lac Trung Street,Hai Ba Trung,Ha Noi&lt;br/&gt;License No.31/GP-NHNN.</value>
+  </data>
+  <data name="Footer3" xml:space="preserve">
+    <value>Supported PBX: 19001530 / support: http://hotro.vtc.vn</value>
+  </data>
+  <data name="Help" xml:space="preserve">
+    <value>Guide</value>
+  </data>
+  <data name="MessageBankCardWallet" xml:space="preserve">
+    <value>Saving Bank-card to your E-wallet helps you finish payment without filling card information, card is secured by OTP/ODP or 3D-Secure</value>
+  </data>
+  <data name="MessageBankCardWallet1" xml:space="preserve">
+    <value>Select payment that means you agree with </value>
+  </data>
+  <data name="MessageBankCardWallet2" xml:space="preserve">
+    <value>VTC Pay's policy</value>
+  </data>
+  <data name="MessageBankCardWallet3" xml:space="preserve">
+    <value>ODP has been sent to your registed email/ mobile phone.  If has not received ODP, please make SMS: PAY ODP sent to 19001530.</value>
+  </data>
+  <data name="MessagePrepaidCard1" xml:space="preserve">
+    <value>No discount if pay via prepaid card</value>
+  </data>
+  <data name="MessagePrepaidCard2" xml:space="preserve">
+    <value>Paid cards cannot be reused, the denomination will be converted to Vcoin and added to the balance of set top box account.</value>
+  </data>
+  <data name="MessagePrepaidCard3" xml:space="preserve">
+    <value>The telco cards (Mobifone, Vinaphone, Viettel) are recognized only 90% of the denomination.</value>
+  </data>
+  <data name="MessageVTCAccount1" xml:space="preserve">
+    <value>No discount if pay via VTC Account.</value>
+  </data>
+  <data name="MessageVTCAccount2" xml:space="preserve">
+    <value>Note: 1Vcoin = 1,000 VND.</value>
+  </data>
+  <data name="MessageWalletUp" xml:space="preserve">
+    <value>If using ODP secure code, the code has been sent to the phone number / email.  If not received, please make SMS: PAY ODP sent to 19001530. Support telephone number: 19001530</value>
+  </data>
+  <data name="MobifoneCard" xml:space="preserve">
+    <value>Mobifone card</value>
+  </data>
+  <data name="ODP" xml:space="preserve">
+    <value>ODP code</value>
+  </data>
+  <data name="PrepaidCard" xml:space="preserve">
+    <value>Prepaid card</value>
+  </data>
+  <data name="SerialCard" xml:space="preserve">
+    <value>Serial</value>
+  </data>
+  <data name="TypeCard" xml:space="preserve">
+    <value>Card type</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>User name</value>
+  </data>
+  <data name="VcoinCard" xml:space="preserve">
+    <value>Vcoin card</value>
+  </data>
+  <data name="ViettelCard" xml:space="preserve">
+    <value>Viettel card</value>
+  </data>
+  <data name="VinaphoneCard" xml:space="preserve">
+    <value>Vinaphone card</value>
+  </data>
+  <data name="VTCDigitalCard" xml:space="preserve">
+    <value>VTCDigital card</value>
+  </data>
+  <data name="WalletUpper" xml:space="preserve">
+    <value>VTC PAY E-WALLET</value>
+  </data>
+  <data name="BalanceNotEnough" xml:space="preserve">
+    <value>The account balance is  not enough</value>
+  </data>
+  <data name="CancelTransaction" xml:space="preserve">
+    <value>Transaction has been canceled</value>
+  </data>
+  <data name="DuplicateOrderCode" xml:space="preserve">
+    <value>Duplicate Transaction code</value>
+  </data>
+  <data name="DuplicateOrders" xml:space="preserve">
+    <value>Duplicate transaction, please check again</value>
+  </data>
+  <data name="HandlTrans" xml:space="preserve">
+    <value>Processing transaction</value>
+  </data>
+  <data name="IncorrectODP" xml:space="preserve">
+    <value>Incorect secure code. Please enter again!</value>
+  </data>
+  <data name="IncorrectPhone" xml:space="preserve">
+    <value>Invalid mobile phone number</value>
+  </data>
+  <data name="InputODP" xml:space="preserve">
+    <value>Enter ODP code &lt;b&gt;</value>
+  </data>
+  <data name="InputODPPayment" xml:space="preserve">
+    <value>Please enter secure code to finish payment.</value>
+  </data>
+  <data name="InputOTP" xml:space="preserve">
+    <value>Please ! Enter OTP code</value>
+  </data>
+  <data name="InputOTPPayment" xml:space="preserve">
+    <value>Please enter OTP to finish payment.</value>
+  </data>
+  <data name="MessageAccInActive" xml:space="preserve">
+    <value>Inactive Account, please activate here</value>
+  </data>
+  <data name="MessageAccountIncorect" xml:space="preserve">
+    <value>Invalid Account</value>
+  </data>
+  <data name="MessageAccPassFail" xml:space="preserve">
+    <value>Incorrect account or password</value>
+  </data>
+  <data name="MessageAttached" xml:space="preserve">
+    <value>You have not attached Bank-card,Please add card</value>
+  </data>
+  <data name="MessageAttached1" xml:space="preserve">
+    <value>Unable Attached Card</value>
+  </data>
+  <data name="MessageAttached2" xml:space="preserve">
+    <value>to payment for this order.Please select other attched card</value>
+  </data>
+  <data name="MessageChanels" xml:space="preserve">
+    <value>of customer have been extend successfully,time limit for subscribers to end day</value>
+  </data>
+  <data name="MessageErrorPayInternalCard" xml:space="preserve">
+    <value>Unable pay via International card,please selection other paymets</value>
+  </data>
+  <data name="MessageErrorPayment" xml:space="preserve">
+    <value>Unable pay via Domestic banks.Please selection other payments</value>
+  </data>
+  <data name="MessageIncorectPass" xml:space="preserve">
+    <value>Incorrect password</value>
+  </data>
+  <data name="MessageInputAcc" xml:space="preserve">
+    <value>Invalid account information</value>
+  </data>
+  <data name="MessageNotUseAttachedCard" xml:space="preserve">
+    <value>Could not use the attached Bank-card to pay for this order .Please select balance e-wallet for payment</value>
+  </data>
+  <data name="MessageNumberAllowed" xml:space="preserve">
+    <value>Fail Login exceedsallowed number. Please! come later</value>
+  </data>
+  <data name="MessagePayInternalCard" xml:space="preserve">
+    <value>Please, select the International card for payment</value>
+  </data>
+  <data name="PackageChannels" xml:space="preserve">
+    <value>Package channels</value>
+  </data>
+  <data name="PleaseInputPhone" xml:space="preserve">
+    <value>Please! Enter mobile phone number</value>
+  </data>
+  <data name="SectionBank" xml:space="preserve">
+    <value>Please! Selection a Bank to payment</value>
+  </data>
+  <data name="SuccessTrans" xml:space="preserve">
+    <value>Successful Transaction</value>
+  </data>
+  <data name="TransProcessing" xml:space="preserve">
+    <value>Processing transaction</value>
+  </data>
+  <data name="LessAccEBSaler" xml:space="preserve">
+    <value>You have to enter the seller VTC account</value>
+  </data>
+  <data name="PaymentConfuse" xml:space="preserve">
+    <value>Error transaction. Please check to know fail or successful transaction</value>
+  </data>
+  <data name="RepeaterOrder" xml:space="preserve">
+    <value>Duplicate order</value>
+  </data>
+  <data name="RequireDetail" xml:space="preserve">
+    <value>Detail requirement</value>
+  </data>
+  <data name="SmallOrder" xml:space="preserve">
+    <value>The minimum amount is 10000</value>
+  </data>
+  <data name="NotEnoughMoney" xml:space="preserve">
+    <value>Account balace  is not sufficient to transaction</value>
+  </data>
+  <data name="PaymentInfomationUp" xml:space="preserve">
+    <value>PAYMENT INFORMATION</value>
+  </data>
+  <data name="MsgTitle" xml:space="preserve">
+    <value>Notification</value>
+  </data>
+  <data name="Notification" xml:space="preserve">
+    <value>Notification</value>
+  </data>
+  <data name="Cancel1" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="MsgNote" xml:space="preserve">
+    <value>Note:</value>
+  </data>
+  <data name="Msg1" xml:space="preserve">
+    <value>You have {0} VND in available account .Do you want to make this  package extend ?</value>
+  </data>
+  <data name="AccMsg1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="AccountNotExits" xml:space="preserve">
+    <value>Invalid account or password</value>
+  </data>
+  <data name="MsgCard" xml:space="preserve">
+    <value>The prepaid card invalid,please check again</value>
+  </data>
+  <data name="EmailEmpty" xml:space="preserve">
+    <value>Your mobile phone is not in VietNam. Please enter your email. We use email for confirmation</value>
+  </data>
+  <data name="EmailInvalid" xml:space="preserve">
+    <value>Email is not right. Please check again!</value>
+  </data>
+  <data name="TooltipInputEmail" xml:space="preserve">
+    <value>If your mobile phone is not in VietNam, we use email for confirmation</value>
+  </data>
+  <data name="InputMatrix" xml:space="preserve">
+    <value>Enter Matrix OTP: &lt;b&gt;</value>
+  </data>
+  <data name="GetBackSmsOdp" xml:space="preserve">
+    <value>Get back ODP code</value>
+  </data>
+  <data name="RequireEmail" xml:space="preserve">
+    <value>Must enter the email to send transaction information</value>
+  </data>
+  <data name="MissSecure" xml:space="preserve">
+    <value>Your account has not registered security payment, to be able to conduct transactions or change security information, please go to settings to register security</value>
+  </data>
+  <data name="SessionTimeOut" xml:space="preserve">
+    <value>Session timeout</value>
+  </data>
+  <data name="ERR_ODP_SMS_SPAM" xml:space="preserve">
+    <value>Each click received the SMS must be separated ODP 30s</value>
+  </data>
+  <data name="ERR_OVER_LIMIT_ODP_SMS_IN_DAY" xml:space="preserve">
+    <value>Every day up to 3 times only ODP SMS</value>
+  </data>
+  <data name="NotifyODPSMS" xml:space="preserve">
+    <value>ODP was sent to your Phone number </value>
+  </data>
+  <data name="OrderInfoInvalid" xml:space="preserve">
+    <value>Order information is invalid. Please check again</value>
+  </data>
+  <data name="NotGetOrderInfo" xml:space="preserve">
+    <value>Not get order infomation</value>
+  </data>
+  <data name="NotifyODPEmail" xml:space="preserve">
+    <value>ODP was sent to your Email</value>
+  </data>
+  <data name="String1" xml:space="preserve">
+    <value>Tài khoản chưa đăng ký loại hình bảo mật. Vui lòng đăng ký để sử dụng chức năng này</value>
+  </data>
+  <data name="WebsiteIntegratedInvalid" xml:space="preserve">
+    <value>Merchant integrated parameters of invalid</value>
+  </data>
+  <data name="AccountReceiveNotExist" xml:space="preserve">
+    <value>Receiver account does not exist</value>
+  </data>
+  <data name="OrderNotExist" xml:space="preserve">
+    <value>Order Not Exists</value>
+  </data>
+  <data name="Here" xml:space="preserve">
+    <value>here</value>
+  </data>
+  <data name="NotifyOTPEmail" xml:space="preserve">
+    <value>OTP was sent to your Email</value>
+  </data>
+  <data name="NotifyOTPSMS" xml:space="preserve">
+    <value>OTP was sent to your Phone number </value>
+  </data>
+</root>

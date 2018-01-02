@@ -1,0 +1,59 @@
+﻿@if (string.IsNullOrEmpty(ViewBag.OrderId) || string.IsNullOrEmpty(ViewBag.Sign))
+{
+    <script type="text/javascript">
+        utils.showPopup("@Resources.Response.Message.RequestInvalid");
+    </script>
+}
+else
+{
+    <div class="popup">
+        <div class="box-popup">
+            <form id="verifyCodeBank">
+                <div style="text-align:center; border-bottom: 1px solid #eee;margin-bottom: 15px;">
+                    <img src="@Html.Raw(Pay365.Utils.Config.Domain)images/logo-purple.svg" width="120" alt="" class="img1">
+                </div>
+                <div class="title" style="text-align:center;font-size:15px;text-transform:uppercase;font-weight:400">@Resources.PayPortal.ConfirmPayment</div>
+
+                <div class="col-lg-8 col-lg-offset-2">
+                    <div class="form-group input-group">
+                        <span class="input-group-addon" style="border-radius: 0; border: 1px #e4e4e4 solid; border-right: none;"><i class="glyphicon glyphicon-lock"></i></span>
+                        <input class="form-control" placeholder="@Resources.OnlineBanking.OTPCode" id="inp_code" name="code" type="text" maxlength="10" style="border-radius: 0; border: 1px #e4e4e4 solid; border-left: none;" onkeyup="changeInput(this, event);" onkeypress="return utils.CheckOnlyNumber(this, event);">
+                    </div>
+                    <div id="divSecureError" class="errorNotice" style="color:red; position: relative;top: -10px;font-size: 14px;"></div>
+
+                </div>
+                <div class="clearfix"></div>
+
+                <div class="form-group">
+                    <button style="background: #9456ff;border-color: #9456ff;" class="btn btn-success" type="button" id="btnSuccess" onclick="ConfirmCodeBankDirect('@ViewBag.OrderId','@ViewBag.Sign');" style="padding:4px 10px;">@Html.Raw(Resources.Response.Message.BtnOk)</button>
+                    <button class="btn btn-default" type="button" id="btnCancel" onclick="utils.closePopup();" style="padding:4px 10px;">@Html.Raw(Resources.Response.Message.BtnClose)</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+    $(document).ready(function () {
+        $("#verifyCodeBank").keypress(function (event) {
+            if (event.which == 13) {
+                ConfirmCodeBankDirect('@ViewBag.OrderId','@ViewBag.Sign');
+            }
+        });
+        $("#inp_code").focus();
+    });
+
+    function changeInput(t, e) {
+        e.preventDefault();
+        if (e.which != 13) {
+            if ($(".errorNotice").is(":visible")) {
+                $("div.input-group").css({
+                    "border": "none",
+                    "border-radius": "0"
+                });
+                $(".errorNotice").html("").hide();
+            }
+        }
+    }
+    
+    </script>
+}

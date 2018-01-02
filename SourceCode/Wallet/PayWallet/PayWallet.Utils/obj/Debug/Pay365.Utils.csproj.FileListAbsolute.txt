@@ -1,0 +1,27 @@
+D:\Backup\BackupServerPay365\Pay365\PAY365.WEB.VERSION1\Pay365\Pay365.Utils\bin\Debug\Pay365.Utils.dll
+D:\Backup\BackupServerPay365\Pay365\PAY365.WEB.VERSION1\Pay365\Pay365.Utils\bin\Debug\Pay365.Utils.pdb
+D:\Backup\BackupServerPay365\Pay365\PAY365.WEB.VERSION1\Pay365\Pay365.Utils\bin\Debug\f7715.dll
+D:\Backup\BackupServerPay365\Pay365\PAY365.WEB.VERSION1\Pay365\Pay365.Utils\bin\Debug\HtmlSanitizationLibrary.dll
+D:\Backup\BackupServerPay365\Pay365\PAY365.WEB.VERSION1\Pay365\Pay365.Utils\bin\Debug\NLog.dll
+D:\Backup\BackupServerPay365\Pay365\PAY365.WEB.VERSION1\Pay365\Pay365.Utils\obj\Debug\Pay365.Utils.csprojResolveAssemblyReference.cache
+D:\Backup\BackupServerPay365\Pay365\PAY365.WEB.VERSION1\Pay365\Pay365.Utils\obj\Debug\Pay365.Utils.csproj.CoreCompileInputs.cache
+D:\Backup\BackupServerPay365\Pay365\PAY365.WEB.VERSION1\Pay365\Pay365.Utils\obj\Debug\Pay365.Utils.dll
+D:\Backup\BackupServerPay365\Pay365\PAY365.WEB.VERSION1\Pay365\Pay365.Utils\obj\Debug\Pay365.Utils.pdb
+D:\Project Pay365\Pay365\Pay365.Utils\bin\Debug\Pay365.Utils.dll
+D:\Project Pay365\Pay365\Pay365.Utils\bin\Debug\Pay365.Utils.pdb
+D:\Project Pay365\Pay365\Pay365.Utils\bin\Debug\f7715.dll
+D:\Project Pay365\Pay365\Pay365.Utils\bin\Debug\HtmlSanitizationLibrary.dll
+D:\Project Pay365\Pay365\Pay365.Utils\bin\Debug\NLog.dll
+D:\Project Pay365\Pay365\Pay365.Utils\obj\Debug\Pay365.Utils.csprojResolveAssemblyReference.cache
+D:\Project Pay365\Pay365\Pay365.Utils\obj\Debug\Pay365.Utils.dll
+D:\Project Pay365\Pay365\Pay365.Utils\obj\Debug\Pay365.Utils.pdb
+D:\Project Pay365\Pay365\Pay365.Utils\obj\Debug\Pay365.Utils.csproj.CoreCompileInputs.cache
+D:\Work Project\PAY365.WEB.VERSION1\Pay365\Pay365.Utils\bin\Debug\Pay365.Utils.dll
+D:\Work Project\PAY365.WEB.VERSION1\Pay365\Pay365.Utils\bin\Debug\Pay365.Utils.pdb
+D:\Work Project\PAY365.WEB.VERSION1\Pay365\Pay365.Utils\bin\Debug\f7715.dll
+D:\Work Project\PAY365.WEB.VERSION1\Pay365\Pay365.Utils\bin\Debug\HtmlSanitizationLibrary.dll
+D:\Work Project\PAY365.WEB.VERSION1\Pay365\Pay365.Utils\bin\Debug\NLog.dll
+D:\Work Project\PAY365.WEB.VERSION1\Pay365\Pay365.Utils\obj\Debug\Pay365.Utils.csprojResolveAssemblyReference.cache
+D:\Work Project\PAY365.WEB.VERSION1\Pay365\Pay365.Utils\obj\Debug\Pay365.Utils.csproj.CoreCompileInputs.cache
+D:\Work Project\PAY365.WEB.VERSION1\Pay365\Pay365.Utils\obj\Debug\Pay365.Utils.dll
+D:\Work Project\PAY365.WEB.VERSION1\Pay365\Pay365.Utils\obj\Debug\Pay365.Utils.pdb

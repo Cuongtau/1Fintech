@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AccessEmail" xml:space="preserve">
+    <value>Please access the activation email to complete your new password</value>
+  </data>
+  <data name="AccountBusiness" xml:space="preserve">
+    <value>Business Account</value>
+  </data>
+  <data name="AccountLocked" xml:space="preserve">
+    <value>Accounts currently locked</value>
+  </data>
+  <data name="AccountNotExists" xml:space="preserve">
+    <value>Accounts not exist</value>
+  </data>
+  <data name="AccountNotValid" xml:space="preserve">
+    <value>Invalid mobiphone number</value>
+  </data>
+  <data name="AccountPersonal" xml:space="preserve">
+    <value>Personal Account</value>
+  </data>
+  <data name="AccountValid" xml:space="preserve">
+    <value>Account valid</value>
+  </data>
+  <data name="AccountValided" xml:space="preserve">
+    <value>Account has been authenticated</value>
+  </data>
+  <data name="AccountValidedNotDo" xml:space="preserve">
+    <value>Your account has been authenticated, can not perform this function</value>
+  </data>
+  <data name="DataNotValid" xml:space="preserve">
+    <value>The data you provide is invalid. Please try again later.</value>
+  </data>
+  <data name="EmailAuthened" xml:space="preserve">
+    <value>Your email has been authenticated</value>
+  </data>
+  <data name="EmailExisted" xml:space="preserve">
+    <value>Email address already exists</value>
+  </data>
+  <data name="EmailNotEnter" xml:space="preserve">
+    <value>Unknown email address</value>
+  </data>
+  <data name="EmailNotExactly" xml:space="preserve">
+    <value>Email account not accurate</value>
+  </data>
+  <data name="EmailNotValid" xml:space="preserve">
+    <value>Invalid E-mail address</value>
+  </data>
+  <data name="EnterKeyData" xml:space="preserve">
+    <value>Please enter the Data Encryption Key</value>
+  </data>
+  <data name="EnterKeyPartner" xml:space="preserve">
+    <value>Please enter the encrypted Key Partner</value>
+  </data>
+  <data name="ImagesUpdateValid" xml:space="preserve">
+    <value>Would you upload the image to validate your account</value>
+  </data>
+  <data name="ImagesValided" xml:space="preserve">
+    <value>Have you ever done sending the captcha, please wait for response from administrators.</value>
+  </data>
+  <data name="OldPasswordError" xml:space="preserve">
+    <value>Old password incorrect</value>
+  </data>
+  <data name="OpenidEmailReturn" xml:space="preserve">
+    <value>Switch to OpenID login email follow url returns</value>
+  </data>
+  <data name="OTPNotUse" xml:space="preserve">
+    <value>You do not use OTP matrix. Please select another form</value>
+  </data>
+  <data name="OTPNotValid" xml:space="preserve">
+    <value>Code not valid OTP</value>
+  </data>
+  <data name="OTPReturn" xml:space="preserve">
+    <value>Returns the position matrix enter OTP</value>
+  </data>
+  <data name="OTPValidExtend" xml:space="preserve">
+    <value>OTP code is valid, send the link in Extened</value>
+  </data>
+  <data name="PasswordValid" xml:space="preserve">
+    <value>Password must be between 6-18 characters. Including letters and numbers</value>
+  </data>
+  <data name="SuccessChangeAccount" xml:space="preserve">
+    <value>Converting account successfully.</value>
+  </data>
+  <data name="SuccessGetPass" xml:space="preserve">
+    <value>Congratulations on successfully retrieve your password</value>
+  </data>
+  <data name="SuccessSendValid" xml:space="preserve">
+    <value>Submit account credentials successfully</value>
+  </data>
+  <data name="SuccessUpdateAcc" xml:space="preserve">
+    <value>Updated account information successfully</value>
+  </data>
+  <data name="SuccessUpdateConnect" xml:space="preserve">
+    <value>Update information connected successfully</value>
+  </data>
+  <data name="SuccessUpdatePass" xml:space="preserve">
+    <value>Congratulations you have successfully changed your password</value>
+  </data>
+  <data name="SuccessValidEmail" xml:space="preserve">
+    <value>Congratulation for verifying email successful</value>
+  </data>
+  <data name="SystemBusy" xml:space="preserve">
+    <value>System is busy, please go back later few minutes</value>
+  </data>
+  <data name="UnLogin" xml:space="preserve">
+    <value>That you please login to execute the function of this</value>
+  </data>
+  <data name="UnSuccessSendValid" xml:space="preserve">
+    <value>Send information authentication failed. Please come back later</value>
+  </data>
+  <data name="UnSuccessValidEmail" xml:space="preserve">
+    <value>Authentication failed. Please come back later</value>
+  </data>
+  <data name="UpdateAndValidEmail" xml:space="preserve">
+    <value>Please email updates and authentication</value>
+  </data>
+  <data name="UpdateEmailBefore" xml:space="preserve">
+    <value>That you please update the email address the previous</value>
+  </data>
+  <data name="UpdateEmailBeforeChange" xml:space="preserve">
+    <value>Please update your email address before conversion</value>
+  </data>
+  <data name="UpdateEmailBeforeValid" xml:space="preserve">
+    <value>Please update your email address before authentication</value>
+  </data>
+  <data name="ValidEmailBefore" xml:space="preserve">
+    <value>Please verify email before verify account</value>
+  </data>
+  <data name="ValidNotData" xml:space="preserve">
+    <value>Authentication failed. The data you provide is invalid</value>
+  </data>
+  <data name="EmailNotAuthened" xml:space="preserve">
+    <value>Your email has been authenticated</value>
+  </data>
+</root>

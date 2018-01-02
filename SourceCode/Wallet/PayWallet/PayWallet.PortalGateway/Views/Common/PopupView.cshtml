@@ -1,0 +1,32 @@
+﻿<div class="popup">
+    <div class="box-popup">
+        <img src="@Html.Raw(PayWallet.Utils.Config.Domain)images/logo-purple.svg" width="120" alt="" class="img1"><br>
+        @if (ViewBag.type == 1)
+        {
+            <img src="@Html.Raw(PayWallet.Utils.Config.Domain)images/ok.png" alt="" class="img2">
+            <div class="title">@Resources.PayPortal.PaymentSuccess</div>
+        }
+        else if (ViewBag.type == 2)
+        {
+            <img src="@Html.Raw(PayWallet.Utils.Config.Domain)images/fail.png" alt="" class="img2">
+            <div class="title" style="color: #F00;">@Resources.PayPortal.PaymentFailed</div>
+        }
+        else
+        {
+            <img src="@Html.Raw(PayWallet.Utils.Config.Domain)images/ok.png" alt="" class="img2">
+            <div class="title" style="color: #F00;">@Resources.PayPortal.MsgReview</div>
+        }
+        <p>@Html.Raw(ViewBag.Description)</p>
+        <button style="background: #9456ff;border-color: #9456ff;" class="btn btn-success btn-block" id="btnSuccess">@(string.IsNullOrEmpty(ViewBag.BtnText) ? Resources.Response.Message.BtnClose : Html.Raw(ViewBag.BtnText))</button>
+    </div>
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        var excuseFunction = '@Html.Raw(ViewBag.ExcuteFunction)';
+        if (excuseFunction != '')
+            $("#btnSuccess").attr("onclick", "utils.closePopup();" + excuseFunction);
+        else
+            $("#btnSuccess").attr("onclick", "utils.closePopup();");
+    });
+</script>

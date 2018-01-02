@@ -1,0 +1,70 @@
+﻿@{
+    var language = Pay365.PortalGateway.Utils.LanguageHelper.GetCurrentLanguage();
+    var QueryParam = string.Empty;
+    if (!string.IsNullOrEmpty(ViewBag.UrlRequest))
+    {
+        QueryParam = ViewBag.UrlRequest;
+    }
+
+    var UrlOther = Pay365.Utils.Config.Domain + "checkout.html";
+    if (!string.IsNullOrEmpty(QueryParam))
+    {
+        if (QueryParam.Contains("&content_focus"))
+        {
+            var index = QueryParam.IndexOf("&content_focus");
+            if (index >= 0)
+            {
+                QueryParam = QueryParam.Substring(0, index);
+            }
+        }
+        if (QueryParam.Contains("code="))
+        {
+            if(language == "en")
+            {
+                UrlOther = Pay365.Utils.Config.Domain + "order-payment-button.html";
+            }
+            else
+            {
+                UrlOther = Pay365.Utils.Config.Domain + "thanh-toan-nut-don-hang.html";
+            }
+        }
+
+    }
+
+}
+
+@model List<Pay365.PortalGateway.Models.BankInfo>
+<div class="pay-other">
+    <p>@Resources.PayPortal.OtherPaymentMethods</p>
+    <nav class="bank-logo">
+        @if (ViewBag.Type == 1) //Đang là view thanh toán Pay
+        {
+            <li><a class="l_returnHome" title="Ngân hàng nội địa" href="@Html.Raw(UrlOther + QueryParam + "&content_focus=onlineBanking")"><img src="@Html.Raw(Pay365.Utils.Config.Domain)images/bank-logo/atm.png" alt=""></a></li>
+
+            @*<li><a href="javascript:;" class="bankpayment" onclick="CheckBankPayment(24, 2, extendData,'')"><img src="@Html.Raw(Pay365.Utils.Config.Domain)images/bank-logo/visa.png" alt="" /></a></li>
+                <li><a href="javascript:;" class="bankpayment" onclick="CheckBankPayment(23, 2, extendData, '')"><img src="@Html.Raw(Pay365.Utils.Config.Domain)images/bank-logo/master-card.png" alt="" /></a></li>*@
+        }
+        else if (ViewBag.Type == 2 && ViewBag.WebsiteID != 5000) //Đang là view thanh toán ngân hàng nội địa
+        {
+            <li><a class="l_returnHome" title="Ví điện tử VTCPay" href="@Html.Raw(UrlOther + QueryParam + "&content_focus=walletPay")"><img src="@Html.Raw(Pay365.Utils.Config.Domain)images/bank-logo/vtcpay.png" alt=""></a></li>
+        }
+
+        @if (Model != null && Model.Count > 0)
+        {
+            foreach (var obj in Model)
+            {
+                <li><a href="javascript:;" title="@obj.BankName" class="bankpayment" onclick="CheckBankPayment('@obj.BankCode', 2, extendData,'','@language')"><img src="@Html.Raw(obj.LinkLogo)" alt="@obj.BankName"></a></li>
+            }
+        }
+    </nav>
+
+</div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        var currentLang = '@language';
+        if (currentLang == "en") {
+            var href_current = $(".l_returnHome").attr('href');
+            $(".l_returnHome").attr('href', href_current + "&l=en");
+        }
+    });
+</script>

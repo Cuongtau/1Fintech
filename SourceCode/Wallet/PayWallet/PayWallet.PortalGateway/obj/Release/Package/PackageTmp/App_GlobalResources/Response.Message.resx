@@ -1,0 +1,413 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AccountExisted" xml:space="preserve">
+    <value>Tài khoản đã tồn tại trên hệ thống</value>
+  </data>
+  <data name="AccountInActive" xml:space="preserve">
+    <value>Tài khoản chưa được kích hoạt. Vui lòng kích hoạt {0}.</value>
+  </data>
+  <data name="ActiveAccNotExist" xml:space="preserve">
+    <value>Tài khoản kích hoạt không tồn tại</value>
+  </data>
+  <data name="ActiveCodeInvalid" xml:space="preserve">
+    <value>Mã kích hoạt không hợp lệ</value>
+  </data>
+  <data name="BankNotExist" xml:space="preserve">
+    <value>Ngân hàng không tồn tại</value>
+  </data>
+  <data name="EmailExisted" xml:space="preserve">
+    <value>Email đã được sử dụng để đăng ký trên hệ thống</value>
+  </data>
+  <data name="EmailInvalid" xml:space="preserve">
+    <value>Email không hợp lệ</value>
+  </data>
+  <data name="InputAddressBussiness" xml:space="preserve">
+    <value>Vui lòng nhập địa chỉ đăng ký kinh doanh</value>
+  </data>
+  <data name="InputBussinessName" xml:space="preserve">
+    <value>Vui lòng nhập tên doanh nghiệp</value>
+  </data>
+  <data name="InputBussinessRegister" xml:space="preserve">
+    <value>Vui lòng nhập số giấy ĐKKD</value>
+  </data>
+  <data name="InputCaptcha" xml:space="preserve">
+    <value>Vui lòng nhập mã kiểm tra</value>
+  </data>
+  <data name="InputEmail" xml:space="preserve">
+    <value>Vui lòng nhập địa chỉ email</value>
+  </data>
+  <data name="InputFullName" xml:space="preserve">
+    <value>Vui lòng nhập họ và tên</value>
+  </data>
+  <data name="InputHeadOffice" xml:space="preserve">
+    <value>Vui lòng nhập địa chỉ trụ sở chính</value>
+  </data>
+  <data name="InputMobileContact" xml:space="preserve">
+    <value>Vui lòng nhập điện thoại liên hệ</value>
+  </data>
+  <data name="InputPassport" xml:space="preserve">
+    <value>Vui lòng nhập số CMTND, Hộ chiếu</value>
+  </data>
+  <data name="InputPassword" xml:space="preserve">
+    <value>Vui lòng nhập mật khẩu</value>
+  </data>
+  <data name="InputTaxCode" xml:space="preserve">
+    <value>Vui lòng nhập mã số thuế</value>
+  </data>
+  <data name="InputUserName" xml:space="preserve">
+    <value>Vui lòng nhập số tài khoản</value>
+  </data>
+  <data name="NotEnoughMoney" xml:space="preserve">
+    <value>Tài khoản không đủ số dư để thực hiện giao dịch</value>
+  </data>
+  <data name="NoteTelcoFastReg" xml:space="preserve">
+    <value>Hiện tại VTC Pay không hỗ trợ đăng ký nhanh cho các số điện thoại không thuộc các mạng Viettel, Vinaphone, Mobifone, Vietnamobile. Để tiếp tục đăng ký vui lòng click &lt;a href=\"https://pay.vtc.vn/#dang-ky-440\" target=\"_blank\" &gt;tại đây&lt;/a&gt;</value>
+  </data>
+  <data name="NotMoneyGotoGate" xml:space="preserve">
+    <value>Số dư trong tài khoản không đủ để thực hiện giao dịch!&lt;br/&gt;Vui lòng thanh toán bằng tài khoản &lt;a href=\"{0}\" &gt;&lt;b&gt;Ngân hàng/Ví điện tử&lt;/b&gt;&lt;/a&gt; hoặc &lt;a href=\"{1}\"&gt;&lt;b&gt;Nạp thêm tiền&lt;/b&gt;&lt;/a&gt; vào tài khoản.&lt;br/&gt;&lt;a href=\"{2}\" &gt;&lt;b&gt;Click vào đây&lt;/b&gt;&lt;/a&gt; để quay trở lại trang chủ</value>
+  </data>
+  <data name="OdpEmaiSent" xml:space="preserve">
+    <value>Mã xác thực ODP đã được gửi lại vào email {0} và số điện thoại của bạn.</value>
+  </data>
+  <data name="OdpOver3" xml:space="preserve">
+    <value>Bạn đã nhận mã ODP quá 3 lần</value>
+  </data>
+  <data name="OdpSending" xml:space="preserve">
+    <value>ODP đang được gửi, bạn vui lòng chờ</value>
+  </data>
+  <data name="OdpSent" xml:space="preserve">
+    <value>Mã xác thực ODP đã được gửi lại vào số điện thoại của bạn. Vui lòng kiểm tra lại.</value>
+  </data>
+  <data name="OtpExpired" xml:space="preserve">
+    <value>Mã OTP đã hết hạn, bạn vui lòng nhập lại theo vị trí mới</value>
+  </data>
+  <data name="PasswordPolicy" xml:space="preserve">
+    <value>Mật khẩu từ 8-18 ký tự bao gồm cả chữ hoa, chữ thường và chữ số</value>
+  </data>
+  <data name="PhoneNumberInvalid" xml:space="preserve">
+    <value>Số điện thoại không hợp lệ</value>
+  </data>
+  <data name="RechargeMinInvalid" xml:space="preserve">
+    <value>Bạn cần nhập tối thiểu 10,000 VNĐ</value>
+  </data>
+  <data name="RetypePassInvalid" xml:space="preserve">
+    <value>Mật khẩu nhập lại không đúng</value>
+  </data>
+  <data name="RetypePassword" xml:space="preserve">
+    <value>Vui lòng nhập lại MK</value>
+  </data>
+  <data name="SecureCodeInvalid" xml:space="preserve">
+    <value>Mã bảo mật không hợp lệ</value>
+  </data>
+  <data name="SelectCity" xml:space="preserve">
+    <value>Vui lòng chọn tình thành phố</value>
+  </data>
+  <data name="SelectDistrict" xml:space="preserve">
+    <value>Vui lòng chọn quận huyện</value>
+  </data>
+  <data name="SentCardCodeFail" xml:space="preserve">
+    <value>Gửi mã thẻ không thành công</value>
+  </data>
+  <data name="SystemBusy" xml:space="preserve">
+    <value>Hệ thống đang bận, vui long quay lại sau</value>
+  </data>
+  <data name="TransactionSuccess" xml:space="preserve">
+    <value>Bạn đã giao dịch thành công.</value>
+  </data>
+  <data name="Unlogin" xml:space="preserve">
+    <value>Bạn vui lòng đăng nhập hệ thống để sử dụng dịch vụ</value>
+  </data>
+  <data name="UnloginGotoGate" xml:space="preserve">
+    <value>Chưa đăng nhập thì redirect sang cổng thanh toán</value>
+  </data>
+  <data name="UserNameInvalid" xml:space="preserve">
+    <value>Tài khoản không hợp lệ</value>
+  </data>
+  <data name="UsingSecurity" xml:space="preserve">
+    <value>Có sử dụng dịch vụ bảo mật ODP, OTP</value>
+  </data>
+  <data name="VerifyCodeInvalid" xml:space="preserve">
+    <value>Mã xác thực không hợp lệ</value>
+  </data>
+  <data name="CaptchaExpires" xml:space="preserve">
+    <value>Mã kiểm tra đã hết hạn. Vui lòng đổi mã kiểm tra</value>
+  </data>
+  <data name="CaptchaInvalid" xml:space="preserve">
+    <value>Mã kiểm tra không hợp lệ</value>
+  </data>
+  <data name="DataNotValid" xml:space="preserve">
+    <value>Dữ liệu bạn cung cấp không hợp lệ. </value>
+  </data>
+  <data name="LoginSuccess" xml:space="preserve">
+    <value>Bạn đã đăng nhập thành công.</value>
+  </data>
+  <data name="ServiceInvalid" xml:space="preserve">
+    <value>Dịch vụ truy cập không hợp lệ</value>
+  </data>
+  <data name="UsernameInvalidLength" xml:space="preserve">
+    <value>Số tài khoản không hợp lệ, độ dài từ 9 - 11</value>
+  </data>
+  <data name="LoginNow" xml:space="preserve">
+    <value>Đăng nhập ngay</value>
+  </data>
+  <data name="InputActiveCode" xml:space="preserve">
+    <value>Vui lòng nhập mã kích hoạt</value>
+  </data>
+  <data name="PassportPolicy" xml:space="preserve">
+    <value>Số chứng minh thư không hợp lệ. Độ dài từ 9-12 ký tự</value>
+  </data>
+  <data name="FullNameInvalid" xml:space="preserve">
+    <value>Họ tên không hợp lệ</value>
+  </data>
+  <data name="RegisterSuccess" xml:space="preserve">
+    <value>Bạn đã đăng ký thành công</value>
+  </data>
+  <data name="UserOrPasswordInvalid" xml:space="preserve">
+    <value>Tài khoản hoặc mật khẩu không hợp lệ.</value>
+  </data>
+  <data name="RequestInvalid" xml:space="preserve">
+    <value>Yêu cầu không hợp lệ </value>
+  </data>
+  <data name="PasswordOldNeedChange" xml:space="preserve">
+    <value>Mật khẩu tài khoản của bạn đã lâu không được thay đổi, bạn cần phải đổi mật khẩu mới để tiếp tục sử dụng dịch vụ. Trân trọng cảm ơn</value>
+  </data>
+  <data name="AccountNotUseFunction" xml:space="preserve">
+    <value>Tài khoản của bạn không thể thực hiện chức năng này</value>
+  </data>
+  <data name="BtnClose" xml:space="preserve">
+    <value>Đóng</value>
+  </data>
+  <data name="BtnOk" xml:space="preserve">
+    <value>Đồng ý</value>
+  </data>
+  <data name="Max3ODP" xml:space="preserve">
+    <value>Mỗi ngày chỉ nhận tối đa 3 lần ODP SMS</value>
+  </data>
+  <data name="ODPOther30s" xml:space="preserve">
+    <value>Mỗi lần click nhận lại ODP SMS phải cách nhau 30s</value>
+  </data>
+  <data name="ODPResentMail" xml:space="preserve">
+    <value>Mã xác thực ODP đã được gửi lại vào email</value>
+  </data>
+  <data name="ODPResentPhone" xml:space="preserve">
+    <value>Mã xác thực ODP đã được gửi lại vào số điện thoại của bạn</value>
+  </data>
+  <data name="ODPsentMailAndPhone" xml:space="preserve">
+    <value>Mã xác thực ODP đã được gửi vào email {0} và số điện thoại của bạn</value>
+  </data>
+  <data name="RecieverAccountInvalid" xml:space="preserve">
+    <value>Tài khoản nhận tiền không hợp lệ hoặc đang bị khóa</value>
+  </data>
+  <data name="TransactionInvalid" xml:space="preserve">
+    <value>Giao dịch không hợp lệ</value>
+  </data>
+  <data name="WrongSignal" xml:space="preserve">
+    <value>Sai chữ ký</value>
+  </data>
+  <data name="PaymentExpired" xml:space="preserve">
+    <value>Giao dịch quá thời gian thanh toán. Vui lòng thực hiện lại</value>
+  </data>
+  <data name="AccountDuplicate" xml:space="preserve">
+    <value>Tài khoản thanh toán và tài khoản nhận phải khác nhau</value>
+  </data>
+  <data name="AccountNotLinkBank" xml:space="preserve">
+    <value>Tài khoản của bạn chưa gắn kết với thẻ ngân hàng</value>
+  </data>
+  <data name="AccountUnActive" xml:space="preserve">
+    <value>Tài khoản không hoạt động</value>
+  </data>
+  <data name="AmountPayLimitDay" xml:space="preserve">
+    <value>Vượt quá hạn mức tiêu trong ngày là </value>
+  </data>
+  <data name="AmountPayLimitMonth" xml:space="preserve">
+    <value>Vượt quá hạn mức tiêu trong tháng là</value>
+  </data>
+  <data name="AmountPayMaxLimit" xml:space="preserve">
+    <value>Số tiền thanh toán vượt quá hạn mức giao dịch là </value>
+  </data>
+  <data name="AmountPaymentInvalid" xml:space="preserve">
+    <value>Số tiền thanh toán không hợp lệ</value>
+  </data>
+  <data name="AmountPayMinLitmit" xml:space="preserve">
+    <value>Số tiền thanh toán nhỏ hơn hạn mức yêu cầu là </value>
+  </data>
+  <data name="BankPaymentInvalid" xml:space="preserve">
+    <value>Ngân hàng thanh toán không hợp lệ</value>
+  </data>
+  <data name="BlockByLoginFail" xml:space="preserve">
+    <value>Tài khoản bị khóa 15 phút do đăng nhập sai 5 lần. Hãy thử lại sau 15 phút.</value>
+  </data>
+  <data name="CreateOrderFail" xml:space="preserve">
+    <value>Khởi tạo đơn hàng thất bại</value>
+  </data>
+  <data name="OrderInvalid" xml:space="preserve">
+    <value>Đơn hàng không hợp lệ</value>
+  </data>
+  <data name="SecureCodeWrongManyTime" xml:space="preserve">
+    <value>Mã bảo mật nhập sai quá số lần quy định. Chúng tôi sẽ khóa chức năng giao dịch trong 5 phút</value>
+  </data>
+  <data name="TransactionFail" xml:space="preserve">
+    <value>Giao dịch thanh toán thất bại</value>
+  </data>
+  <data name="TransactionReview" xml:space="preserve">
+    <value>Giao dịch đang được xử lý</value>
+  </data>
+  <data name="BankAccountNotEligible" xml:space="preserve">
+    <value>Tài khoản khách hàng không đủ điều kiện giao dịch</value>
+  </data>
+  <data name="CustomerOrderCancel" xml:space="preserve">
+    <value>Khách hàng hủy đơn hàng, Bank thông báo hủy đơn hàng</value>
+  </data>
+  <data name="OrderBankFail" xml:space="preserve">
+    <value>Đơn hàng thanh toán tại ngân hàng thất bại</value>
+  </data>
+  <data name="TransactionReject" xml:space="preserve">
+    <value>Giao dịch đã bị từ chối !</value>
+  </data>
+  <data name="TransactionBankFail" xml:space="preserve">
+    <value>Lỗi giao dịch tại hệ thống ngân hàng</value>
+  </data>
+  <data name="TransactionNotMatch" xml:space="preserve">
+    <value>Giao dịch tại ngân hàng đã thành công, nhưng số tiền thanh toán từ Bank trả về không khớp với dữ liệu tại hệ thống VTC</value>
+  </data>
+  <data name="TransactionUnknow" xml:space="preserve">
+    <value>Không đủ thông tin trả về từ bank để có  thể xác định được trạng thái của giao dịch</value>
+  </data>
+  <data name="TransactionVTCFail" xml:space="preserve">
+    <value>Lỗi giao dịch tại hệ thống VTCPay</value>
+  </data>
+  <data name="EmailNotVerify" xml:space="preserve">
+    <value>Vui lòng xác thực email</value>
+  </data>
+  <data name="SentSecureCodeFail" xml:space="preserve">
+    <value>Gửi mã bảo mật thất bại. Vui lòng thử lại !</value>
+  </data>
+  <data name="InputSecureCode" xml:space="preserve">
+    <value>Vui lòng nhập mã xác thực</value>
+    <comment>Vui lòng nhập mã xác thực</comment>
+  </data>
+  <data name="InputSecureCodeNewDevice" xml:space="preserve">
+    <value>Vui lòng nhập mã bảo mật cho thiết bị mới</value>
+    <comment>Vui lòng nhập mã bảo mật cho thiết bị mới</comment>
+  </data>
+  <data name="ScanQRCode" xml:space="preserve">
+    <value>Sử dụng ứng dụng VTC Pay hoặc ứng dụng bất kỳ  &lt;br&gt;có tính năng quét mã QR Code để thanh toán</value>
+  </data>
+</root>

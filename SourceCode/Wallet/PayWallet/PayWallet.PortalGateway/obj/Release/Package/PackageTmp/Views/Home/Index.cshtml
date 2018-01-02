@@ -1,0 +1,166 @@
+﻿@{
+    ViewBag.Title = Resources.Checkout.PaymentGate + " Pay365";
+}
+@using Pay365.Utils.Security
+@using Pay365.PortalGateway.Utils
+@model Pay365.PortalGateway.Models.InfoPaymentModel
+@{
+
+    var language = LanguageHelper.GetCurrentLanguage();
+    var queryUrl = Model.QueryUrl;
+    var LinkReturn = "";
+    if (!string.IsNullOrEmpty(queryUrl))
+    {
+        LinkReturn = Pay365.Utils.Config.Domain + "checkout.html" + queryUrl;
+    }
+    var orderInfo = Model.OrderInfo;
+    var SecurityKey = System.Configuration.ConfigurationManager.AppSettings["SecretKey_TransactionRequest"];
+    var objectExend = new Pay365.PortalGateway.Models.ObjectExtend
+    {
+        content_focus = Model.OrderInfo.focus,
+        providerName = Model.ProviderName,
+        queryUrl = Model.QueryUrl
+    };
+    var ListBank = (List<Pay365.PortalGateway.Models.BankInfo>)ViewBag.ListBank;
+}
+<script type="text/javascript">
+    var linkReturn = '@Html.Raw(LinkReturn)';
+    if (linkReturn != null && linkReturn != '') {
+        $("#returnHome").attr('href', linkReturn);
+    }
+</script>
+@if (Model != null && Model.CheckRequest != null)
+{
+
+    if (Model.CheckRequest.ResponseCode > 0)
+    {
+        if (!string.IsNullOrEmpty(Model.CheckRequest.RedirectUrl))
+        {
+            <script type="text/javascript">
+                location.href = '@Html.Raw(Model.CheckRequest.RedirectUrl)';
+            </script>
+        }
+
+        <div class="giaodich">
+            <div class="col-md-12">
+                <img src="@Html.Raw(string.IsNullOrEmpty(Model.MerchantLogo) ? Pay365.Utils.Config.Domain + Model.MerchantLogo : Model.MerchantLogo)" alt="" class="pull-left" height="60" width="60">
+                <table class="pull-left text">
+                    <tr>
+                        <td class="lbtext"><span>@Resources.PayPortal.TransactionCode:</span></td>
+                        <td>@Model.OrderInfo.ordercode</td>
+                    </tr>
+                    <tr>
+                        <td class="lbtext"><span>@Resources.PayPortal.TransactionValue:</span></td>
+                        <td>@((!string.IsNullOrEmpty(Model.OrderInfo.currency) && Model.OrderInfo.currency.ToUpper() == Currency.USD) ? string.Format("$ {0:N2}", Model.OrderInfo.amount) : string.Format("{0:0,0} đ", Model.OrderInfo.amount))</td>
+                    </tr>
+                    <tr>
+                        <td class="lbtext"><span>@Resources.PayPortal.Merchant:</span></td>
+                        <td>@Html.Raw(Model.ProviderName)</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        if (Model.OrderInfo.amount > 0)
+        {
+            <div id="content-page">
+                <div class="head-title">
+                    <div class="col-md-8">@Resources.PayPortal.PaymentMethod</div>
+                    <div class="col-md-4">
+                        @*@if (string.IsNullOrEmpty(orderInfo.payType) || orderInfo.payType.ToUpper().Contains(BankType.InternationalCard) || orderInfo.payType.ToUpper().Contains(BankType.DomesticBank))
+                        {
+                            @Html.Action("SearchBank", "Common", new { extendData = EncryptDataOrder })
+                        }*@
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    
+                    @if (ListBank != null && ListBank.Count > 0 && (string.IsNullOrEmpty(orderInfo.payType) || orderInfo.payType.ToUpper().Contains(BankType.DomesticBank)))
+                    {
+                        var dem = 0;
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingThree">
+                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#onlineBanking" aria-expanded="true" aria-controls="onlineBanking">
+                                    <img src="@Html.Raw(Pay365.Utils.Config.Domain)images/bank1.png" alt="" class="icon-img pull-left">
+                                    <h4 class="panel-title">@Resources.PayPortal.OnlineBanking</h4>
+                                    <div class="clearfix"></div>
+                                </a>
+                            </div>
+                            <div id="onlineBanking" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingThree">
+                                <div class="panel-body">
+                                    <div class="box-nganhang">
+                                        <nav class="bank-logo" id="bank-list">
+                                            @foreach (var obj in ListBank)
+                                            {
+                                                if (dem == 11)
+                                                {
+                                                    @Html.Raw("<div style=\"display:none\" id=\"list-bank-hidden\">");
+                                                }
+                                                
+                                                    <li>
+                                                        <a href="javascript:;" title="@Html.Raw(obj.BankName)" class="bankpayment" onclick="CheckBankPayment('@obj.BankCode', 1, '','', '@language')"><img src="@Html.Raw(obj.Logo)" alt="@obj.BankName"></a><br>
+                                                        <span>@string.Format("{0:0,0} đ", obj.TotalAmount)</span>
+                                                    </li>
+                                                if (dem == ListBank.Count - 1)
+                                                {
+                                                    @Html.Raw("</div>");
+                                                }
+                                                if (dem == 10)
+                                                {
+                                                    <li><a href="javascript:;" class="more-bank"><img src="@Html.Raw(Pay365.Utils.Config.Domain)images/bank-logo/other-bank.png" alt=""></a><br><span>&nbsp;</span></li>
+                                                }
+                                                dem++;
+                                            }
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                    <script type="text/javascript">
+                        $(document).ready(function () {
+                            //$("#popTech").popover({
+                            //    html: true,
+                            //    content: 'Chỉ hỗ trợ thanh toán trên trình duyệt IE và Firefox'
+                            //});
+                            var showfocus = '@orderInfo.focus';
+                            if (showfocus != '' && showfocus != null) {
+                                $(".collapse").collapse('hide');
+                                $("#" + showfocus).collapse("show");
+                            }
+                            else if ('@orderInfo.payType.ToUpper()' == 'VTCPAY') {
+                                $(".collapse").collapse('hide');
+                                $("#walletPay").collapse("show");
+                            }
+
+
+                            $(".more-bank").click(function () {
+                                $(this).parent().remove();
+                                $("#bank-list").append($("#list-bank-hidden").html()).slideDown("slow");
+                            });
+                            
+                        });
+
+                    </script>
+
+                </div>
+
+
+            </div>
+        }
+    }
+    else if (!string.IsNullOrEmpty(Model.CheckRequest.RedirectUrl))
+    {
+        <script type="text/javascript">
+            var url = '@Html.Raw(Model.CheckRequest.RedirectUrl)';
+            utils.showPopupConfirm('@Html.Raw(Model.CheckRequest.Message)', '@Resources.PayPortal.Retry', 2, 'window.location="' + url + '"');
+        </script>
+    }
+    else
+    {
+        <script type="text/javascript">
+            utils.showPopup('@Html.Raw(Model.CheckRequest.Message)');
+        </script>
+    }
+}

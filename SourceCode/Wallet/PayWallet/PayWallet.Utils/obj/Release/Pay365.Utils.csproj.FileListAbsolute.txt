@@ -1,0 +1,17 @@
+D:\Backup\BackupServerPay365\Pay365\PAY365.WEB.VERSION1\Pay365\Pay365.Utils\bin\Release\Pay365.Utils.dll
+D:\Backup\BackupServerPay365\Pay365\PAY365.WEB.VERSION1\Pay365\Pay365.Utils\bin\Release\Pay365.Utils.pdb
+D:\Backup\BackupServerPay365\Pay365\PAY365.WEB.VERSION1\Pay365\Pay365.Utils\bin\Release\f7715.dll
+D:\Backup\BackupServerPay365\Pay365\PAY365.WEB.VERSION1\Pay365\Pay365.Utils\bin\Release\HtmlSanitizationLibrary.dll
+D:\Backup\BackupServerPay365\Pay365\PAY365.WEB.VERSION1\Pay365\Pay365.Utils\bin\Release\NLog.dll
+D:\Backup\BackupServerPay365\Pay365\PAY365.WEB.VERSION1\Pay365\Pay365.Utils\obj\Release\Pay365.Utils.csproj.CoreCompileInputs.cache
+D:\Backup\BackupServerPay365\Pay365\PAY365.WEB.VERSION1\Pay365\Pay365.Utils\obj\Release\Pay365.Utils.dll
+D:\Backup\BackupServerPay365\Pay365\PAY365.WEB.VERSION1\Pay365\Pay365.Utils\obj\Release\Pay365.Utils.pdb
+D:\Work Project\PAY365.WEB.VERSION1\Pay365\Pay365.Utils\bin\Release\Pay365.Utils.dll
+D:\Work Project\PAY365.WEB.VERSION1\Pay365\Pay365.Utils\bin\Release\Pay365.Utils.pdb
+D:\Work Project\PAY365.WEB.VERSION1\Pay365\Pay365.Utils\bin\Release\f7715.dll
+D:\Work Project\PAY365.WEB.VERSION1\Pay365\Pay365.Utils\bin\Release\HtmlSanitizationLibrary.dll
+D:\Work Project\PAY365.WEB.VERSION1\Pay365\Pay365.Utils\bin\Release\NLog.dll
+D:\Work Project\PAY365.WEB.VERSION1\Pay365\Pay365.Utils\obj\Release\Pay365.Utils.csprojResolveAssemblyReference.cache
+D:\Work Project\PAY365.WEB.VERSION1\Pay365\Pay365.Utils\obj\Release\Pay365.Utils.csproj.CoreCompileInputs.cache
+D:\Work Project\PAY365.WEB.VERSION1\Pay365\Pay365.Utils\obj\Release\Pay365.Utils.dll
+D:\Work Project\PAY365.WEB.VERSION1\Pay365\Pay365.Utils\obj\Release\Pay365.Utils.pdb

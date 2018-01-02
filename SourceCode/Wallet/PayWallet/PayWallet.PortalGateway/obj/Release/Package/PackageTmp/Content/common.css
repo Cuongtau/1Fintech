@@ -1,0 +1,1197 @@
+body {
+    background-color: #f5f5f5;
+}
+
+span {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.container-pay {
+    width: 900px;
+}
+.lbtext{width:140px}
+.logo {
+    margin-top: 20px;
+}
+.popover {
+    width:300px;
+}
+.navbar-pay {
+    background: url(../images/banner.jpg) 0 0 no-repeat;
+    height: 100px;
+    background-position: center;
+    border-radius: 0;
+}
+
+.img-top {
+    position: relative;
+}
+
+    .img-top .close-btn {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+.carousel-control {
+    color: #000;
+    text-shadow: none;
+}
+
+    .carousel-control:hover,
+    .carousel-control:focus {
+        color: #000;
+    }
+
+    .carousel-control.left {
+        background-image: none;
+    }
+
+    .carousel-control.right {
+        background-image: none;
+    }
+
+.carousel,
+.item,
+.active {
+    height: 100%;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+.giaodich table.text{width:80%}
+/* Background images are set within the HTML using inline CSS, not here */
+
+.fill {
+    width: 100%;
+    height: 470px;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.form {
+    position: absolute;
+    top: -460px;
+    right: 0;
+}
+
+.panel-body {
+    padding: 20px;
+}
+
+.title-form {
+    padding: 10px 0;
+    text-align: center;
+    font-size: 16px;
+    color: #000;
+}
+
+.form-control {
+    font-size: 13px;
+    box-shadow: none;
+    border-left: none;
+}
+
+    .form-control:focus {
+        border-color: #ccc;
+        box-shadow: none;
+        color: #000;
+    }
+
+.input-group-addon {
+    padding: 6px 0 6px 12px;
+    font-size: 13px;
+    color: #999;
+    background-color: transparent;
+}
+
+.f5 {
+    padding-right: 12px;
+}
+
+.get-pass {
+    text-align: center;
+    font-size: 14px;
+    padding: 10px 0 0 0;
+}
+
+.btn-pay {
+    width: 100%;
+    display: inline-block;
+    background: #834be1;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+
+    .btn-pay:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #9456ff;
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transform-origin: 0 50%;
+        transform-origin: 0 50%;
+        -webkit-transition-property: transform;
+        transition-property: transform;
+        -webkit-transition-duration: 0.5s;
+        transition-duration: 0.5s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+        border-radius: 5px;
+    }
+
+    .btn-pay:hover, .btn-pay:focus, .btn-pay:active {
+        color: #fff;
+        text-decoration: none !important;
+        border-radius: 5px;
+    }
+
+        .btn-pay:hover:before, .btn-pay:focus:before, .btn-pay:active:before {
+            -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+            -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+            transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+            border-radius: 5px;
+        }
+
+.btn-blank {
+    width: 100%;
+    display: inline-block;
+    border: 1px #CCC solid;
+    background: #fff;
+    color: #333;
+    text-align: center;
+    border-radius: 5px;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+
+    .btn-blank:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #0060af;
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transform-origin: 0 50%;
+        transform-origin: 0 50%;
+        -webkit-transition-property: transform;
+        transition-property: transform;
+        -webkit-transition-duration: 0.5s;
+        transition-duration: 0.5s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+        border-radius: 5px;
+    }
+
+    .btn-blank:hover, .btn-blank:focus, .btn-blank:active {
+        color: #fff;
+        text-decoration: none !important;
+        border-radius: 5px;
+    }
+
+        .btn-blank:hover:before, .btn-blank:focus:before, .btn-blank:active:before {
+            -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+            -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+            transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+            border-radius: 5px;
+        }
+
+.note1 {
+    text-align: center;
+    font-size: 12px;
+    color: #929191;
+    margin: 20px 0;
+    background: url(../images/bg1.gif) 0 3px repeat-x;
+    height: 11px;
+}
+
+    .note1 span {
+        background-color: #fff;
+        padding: 0 10px;
+    }
+
+.copyright {
+    text-align: center;
+    font-size: 11px;
+    color: #929191;
+    padding: 20px 0 0 0;
+}
+
+.navbar-menu li a {
+    font-size: 12px;
+    padding-left: 10px;
+    height: 30px !important;
+}
+
+    .navbar-menu li a img {
+        margin-top: -5px;
+    }
+
+mark {
+    background-color: #b3a2c7;
+}
+
+    mark:hover {
+        background-color: #9e7bc7;
+    }
+
+.carousel-control .glyphicon-chevron-left,
+.carousel-control .glyphicon-chevron-right,
+.carousel-control .icon-prev,
+.carousel-control .icon-next {
+    font-size: 100px;
+    color: #CCC;
+}
+
+.error {
+    border: 1px #F00 solid;
+    border-left: none;
+}
+
+    .error:focus {
+        border-color: #F00;
+    }
+
+.addon-error {
+    border: 1px #F00 solid;
+}
+
+.captcha {
+    font-weight: bold;
+    padding-right: 12px;
+}
+
+.sms {
+    font-size: 11px;
+    border-bottom: 1px #dddddd solid;
+    padding: 0 0 20px 0;
+}
+
+    .sms span {
+        font-weight: bold;
+        color: #C00;
+    }
+
+.hidden-scrollbar {
+    overflow: hidden;
+}
+
+    .hidden-scrollbar .inner {
+        height: 240px;
+        overflow: auto;
+        margin: 0 -17px 0 0;
+    }
+
+.popup {
+    background: #000;
+    background-color: rgba(0,0,0,0.90);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 999;
+}
+
+    .popup .box {
+        margin: 50px auto;
+        width: 450px;
+        background-color: #fff;
+        padding: 10px;
+        border-radius: 5px;
+        text-align: center;
+        position: relative;
+    }
+
+        .popup .box .win {
+            height: 250px;
+        }
+
+        .popup .box .close-btn {
+            position: absolute;
+            top: -20px;
+            right: -20px;
+        }
+
+.text-error {
+    font-size: 11px;
+    color: #F00;
+    margin-top: -10px;
+}
+
+.text-error1 {
+    font-size: 13px;
+    color: #F00;
+    margin-top: -10px;
+}
+
+/*Cong Thanh Toan*/
+.pay-logo {
+    margin-top: 20px;
+}
+
+.support {
+    color: #fff;
+    text-align: right;
+    margin-top: 33px;
+}
+
+    .support span {
+        margin-left: 10px;
+        border: 1px #fff solid;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        font-size: 12px;
+        line-height: 30px;
+        border-radius: 50px;
+    }
+
+    .support a {
+        color: #fff;
+    }
+
+        .support a:hover {
+            text-decoration: none;
+        }
+
+.lang {
+    margin: 37px 0 0 0;
+    background: url(../images/language-header.png) 0 0 no-repeat;
+    width: 27px;
+    height: 24px;
+}
+
+    .lang:hover {
+        background: url(../images/language-header.png) 0 -25px no-repeat;
+        -webkit-transition: 0.3s;
+    }
+
+    .lang img, .lang-en img {
+        float: right;
+        background-color: #000;
+        margin: 0 0 0 15px;
+    }
+
+.lang-en {
+    background: url(../images/language-header.png) 0 -25px no-repeat;
+    margin: 37px 0 0 0;
+    width: 27px;
+    height: 24px;
+}
+
+    .lang-en:hover {
+        background: url(../images/language-header.png) 0 0 no-repeat;
+        -webkit-transition: 0.3s;
+    }
+
+.giaodich {
+    padding: 14px 0 0 0;
+    margin: 0 0 20px 0;
+    background-color: #fff;
+}
+
+    .giaodich img {
+        width: 60px;
+        margin: 0 10px 0 0;
+    }
+
+    .giaodich .text {
+        padding: 0;
+        color: #01a7e8;
+        font-size: 15px;
+    }
+
+        .giaodich .text span {
+            font-weight: normal;
+            color: #333;
+            padding: 0 10px 0 0;
+        }
+
+.social {
+    margin: 17px 0 0 0;
+}
+
+    .social img {
+        width: 30px;
+    }
+
+.box-vidientu {
+    padding: 10px 0;
+    background-color: #fff;
+    margin: 0 0 20px 0;
+}
+
+    .box-vidientu:hover {
+        background-color: #fcfcfc;
+    }
+
+    .box-vidientu img {
+        width: 60px;
+        border-radius: 5px;
+        margin: 0 10px 0 0;
+    }
+
+    .box-vidientu .text {
+        padding: 20px 0 0 0;
+        color: #01a7e8;
+        font-weight: normal;
+    }
+
+        .box-vidientu .text span {
+            color: #FD8703;
+            padding: 0 10px 0 0;
+            font-weight: 300;
+            font-size: 13px;
+        }
+
+    .box-vidientu .detail {
+        margin: 20px 10px 0 0;
+        float: right;
+    }
+
+.head-title {
+    text-transform: uppercase;
+    margin: 0 -15px;
+    line-height: 35px;
+    color: #FD8703;
+    font-weight: normal;
+    font-size: 15px;
+}
+
+    .head-title span {
+        background-color: #fff;
+    }
+
+.pay {
+    border: 1px #e4e4e4 solid;
+    font-weight: normal;
+    border-radius: 0;
+}
+
+.head-title ul {
+    position: absolute;
+    left: 0;
+    top: 33px;
+    width: 100%;
+    border-radius: 0;
+    border: 1px #e4e4e4 solid;
+    color: #999;
+    padding: 5px 0 5px 20px;
+    background-color: #fff;
+    height: 150px;
+    overflow: auto;
+}
+
+.head-title li {
+    text-transform: none;
+    list-style: none;
+    font-size: 13px;
+    line-height: 30px;
+}
+
+.box-nganhang {
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+}
+
+    .box-nganhang img {
+        width: 60px;
+        border-radius: 5px;
+        margin: 0 10px 0 -15px;
+    }
+
+    .box-nganhang .search {
+        padding: 0;
+    }
+
+    .box-nganhang .text {
+        padding: 20px 0 0 0;
+        color: #8601e8;
+        font-weight: normal;
+    }
+
+        .box-nganhang .text span {
+            color: #FD8703;
+            padding: 0 10px 0 0;
+            font-weight: 300;
+            font-size: 13px;
+        }
+
+    .box-nganhang .text1 {
+        padding: 8px 0 0 0;
+        color: #01a7e8;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 25px;
+    }
+
+        .box-nganhang .text1 span {
+            color: #FD8703;
+            padding: 0 10px 0 0;
+            font-weight: normal;
+        }
+
+        .box-nganhang .text1 i {
+            padding: 0 15px 0 0;
+        }
+
+    .box-nganhang .bank-logo {
+        margin: 5px 0 0 0;
+    }
+
+        .box-nganhang .bank-logo li {
+            display: inline-block;
+            margin: 0 0 5px 0;
+            padding: 5px 0;
+            text-align: center;
+            width: 114px;
+            position: relative;
+        }
+
+            .box-nganhang .bank-logo li img {
+                width: 114px;
+                border-radius: 0;
+                margin: 0;
+                border: 1px #e4e4e4 solid;
+                padding: 5px;
+            }
+
+            .box-nganhang .bank-logo li .click {
+                position: absolute;
+                width: 20px;
+                bottom: 5px;
+                right: 5px;
+            }
+
+            .box-nganhang .bank-logo li span {
+                font-size: 12px;
+                font-weight: normal;
+            }
+
+            .box-nganhang .bank-logo li.active {
+                border: 1px #a6d785 solid;
+            }
+
+    .box-nganhang .line {
+        border-bottom: 1px #CCC dashed;
+        margin: 20px 0;
+    }
+
+    .box-nganhang .title-form {
+        font-weight: normal;
+        margin: 10px 0 0 0;
+        color: #8601e8;
+    }
+
+    .box-nganhang button {
+        text-transform: uppercase;
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+
+    .box-nganhang .card {
+        width: 100%;
+        margin: 50px 0 0 0;
+    }
+
+    .box-nganhang .detail {
+        margin: 20px 10px 0 0;
+        float: right;
+    }
+
+.footer {
+    font-size: 13px;
+    padding: 5px 0 50px 0;
+    line-height: 20px;
+}
+
+    .footer img {
+        float: right;
+        width: 200px;
+    }
+
+.no-padding-left {
+    padding-left: 0;
+}
+
+.no-padding-right {
+    padding-right: 0;
+}
+
+.popup .box-popup {
+    margin: 50px auto;
+    width: 450px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+}
+
+    .popup .box-popup .img1 {
+        width: 150px;
+    }
+
+    .popup .box-popup .img2 {
+        width: 150px;
+        margin: 20px 0;
+    }
+
+    .popup .box-popup .title {
+        text-transform: uppercase;
+        font-weight: normal;
+        padding: 0 0 10px 0;
+    }
+
+    .popup .box-popup p {
+        padding-bottom: 10px;
+    }
+
+    .popup .box-popup button {
+        text-transform: uppercase;
+    }
+
+.pay-other {
+}
+
+    .pay-other p {
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+.panel {
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.panel-group .panel {
+    margin-bottom: 0;
+    border-radius: 0;
+}
+
+.panel-default {
+    border-color: #fff;
+}
+
+    .panel-default > .panel-heading + .panel-collapse > .panel-body {
+        border-top-color: #eee;
+    }
+
+    .panel-default .icon-img {
+        width: 60px;
+        border-radius: 5px;
+        margin: 10px 12px;
+    }
+
+    .panel-default .text {
+        padding: 20px 0 0 0;
+        color: #01a7e8;
+        font-weight: normal;
+    }
+
+        .panel-default .text span {
+            color: #FD8703;
+            padding: 0 10px 0 0;
+            font-weight: 300;
+            font-size: 13px;
+        }
+
+    .panel-default > .panel-heading {
+        color: #333;
+        background-color: #fff;
+        border-color: #fff;
+    }
+
+.panel-heading {
+    padding: 0;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.panel-title {
+    padding: 10px 15px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 16px;
+    color: inherit;
+    font-weight: normal !important;
+    line-height: 60px;
+}
+
+.panel-heading a {
+    text-decoration: none;
+}
+
+    .panel-heading a:hover {
+        text-decoration: none;
+    }
+
+
+@media only screen and (max-width: 1200px) and (min-width: 900px) {
+    .form {
+        position: absolute;
+        top: 120px;
+        right: 20px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .container-pay {
+        width: auto;
+    }
+
+    .form img {
+        display: none;
+    }
+
+    .title-form {
+        padding: 0 0 10px 0;
+    }
+
+    .logo {
+        margin-top: 5px;
+        text-align: center;
+        float: none !important;
+    }
+
+        .logo img {
+            width: 125px;
+        }
+
+    .navbar-pay {
+        height: auto;
+    }
+
+    .img-top {
+        display: none;
+    }
+
+    .slide {
+        display: none;
+    }
+
+    .form {
+        position: inherit;
+        top: auto;
+        right: 0;
+    }
+
+    .hidden-scrollbar .inner {
+        height: 245px;
+        margin: 0;
+    }
+
+    .note2 {
+        display: none;
+    }
+
+    .sms {
+        padding: 20px 0;
+    }
+
+    .popup .box {
+        margin: 10px auto;
+        width: 80%;
+    }
+
+        .popup .box .win {
+            width: 100%;
+        }
+
+        .popup .box .close-btn {
+            position: absolute;
+            top: 0;
+            right: -20px;
+        }
+
+    .pay-logo {
+        margin-top: 5px;
+    }
+
+        .pay-logo img {
+            width: 125px;
+        }
+
+    /*Cong Thanh Toan*/
+    .support {
+        margin: -45px 25px 0 0;
+    }
+
+    .lang {
+        margin: 15px 0 0 0;
+    }
+
+    .lang-en {
+        margin: 15px 0 0 0;
+    }
+
+    .social {
+        display: none;
+    }
+
+    .giaodich .text {
+        padding: 0;
+        font-size: 14px;
+    }
+
+    .footer {
+        text-align: center;
+        padding: 0;
+    }
+
+        .footer img {
+            margin: 10px 0;
+            float: none;
+        }
+
+    .box-nganhang .bank-logo li {
+        width: 32.1%;
+        margin: 0 0 5px 0;
+    }
+
+        .box-nganhang .bank-logo li img {
+            width: 100%;
+        }
+
+    .box-nganhang .search {
+        padding: 10px 0 0 0;
+        clear: both;
+    }
+
+    .no-padding-left {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .no-padding-right {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .popup .box-popup {
+        margin: 10px auto;
+        width: 80%;
+    }
+
+        .popup .box-popup .img1 {
+            width: 50%;
+        }
+
+        .popup .box-popup .img2 {
+            width: 60%;
+        }
+
+
+    .errorNotice {
+        position: relative;
+        top: -15px;
+        font-size: 12px;
+    }
+}
+
+.img-Vietcombank {
+    background: url(../images/bank-logo/vietcombank.png) no-repeat;
+}
+
+.img-ABBANK {
+    background: url(../images/bank-logo/ab-bank.png) no-repeat;
+}
+
+.img-ACB {
+    background: url(../images/bank-logo/acb.png) no-repeat;
+}
+
+.img-Agribank {
+    background: url(../images/bank-logo/agribank.png) no-repeat;
+}
+
+.img-BACABANK {
+    background: url(../images/bank-logo/bac-a-bank.png) no-repeat;
+}
+
+.img-BVB {
+    background: url(../images/bank-logo/baoviet-bank.png) no-repeat;
+}
+
+.img-BIDV {
+    background: url(../images/bank-logo/bidv.png) no-repeat;
+}
+
+.img-DongABank {
+    background: url(../images/bank-logo/dong-a-bank.png) no-repeat;
+}
+
+.img-Eximbank {
+    background: url(../images/bank-logo/eximbank.png) no-repeat;
+}
+
+.img-GPBank {
+    background: url(../images/bank-logo/gp-bank.png) no-repeat;
+}
+
+.img-HDBank {
+    background: url(../images/bank-logo/hd-bank.png) no-repeat;
+}
+
+.img-Jcb {
+    background: url(../images/bank-logo/jcb-bank.png) no-repeat;
+}
+
+.img-KienLongBank {
+    background: url(../images/bank-logo/kienlong-bank.png) no-repeat;
+}
+
+.img-LienVietPostBank {
+    background: url(../images/bank-logo/lienviet-bank.png) no-repeat;
+}
+
+.img-MaritimeBank {
+    background: url(../images/bank-logo/maritime-bank.png) no-repeat;
+}
+
+.img-MB {
+    background: url(../images/bank-logo/mb-bank.png) no-repeat;
+}
+
+.img-NamABank {
+    background: url(../images/bank-logo/nam-a-bank.png) no-repeat;
+}
+
+.img-Navibank {
+    background: url(../images/bank-logo/navibank.png) no-repeat;
+}
+
+.img-PHUONGDONG {
+    background: url(../images/bank-logo/ocb.png) no-repeat;
+}
+
+.img-Oceanbank {
+    background: url(../images/bank-logo/oceanbank.png) no-repeat;
+}
+
+.img-PGBank {
+    background: url(../images/bank-logo/pg-bank.png) no-repeat;
+}
+
+.img-Sacombank {
+    background: url(../images/bank-logo/sacombank.png) no-repeat;
+}
+
+.img-SaigonBank {
+    background: url(../images/bank-logo/saigon-bank.png) no-repeat;
+}
+
+.img-SCBBank {
+    background: url(../images/bank-logo/scb-bank.png) no-repeat;
+}
+
+.img-SeABank {
+    background: url(../images/bank-logo/seabank.png) no-repeat;
+}
+
+.img-SHB {
+    background: url(../images/bank-logo/shb.png) no-repeat;
+}
+
+.img-Techcombank {
+    background: url(../images/bank-logo/techcom-bank.png) no-repeat;
+}
+
+.img-TienPhongBank {
+    background: url(../images/bank-logo/tp-bank.png) no-repeat;
+}
+
+.img-VIB {
+    background: url(../images/bank-logo/vib.png) no-repeat;
+}
+
+.img-VietABank {
+    background: url(../images/bank-logo/viet-a-bank.png) no-repeat;
+}
+
+.img-Vietinbank {
+    background: url(../images/bank-logo/vietin-bank.png) no-repeat;
+}
+
+.img-VPBank {
+    background: url(../images/bank-logo/vp-bank.png) no-repeat;
+}
+
+.img-Visa {
+    background: url(../images/bank-logo/visa.png) no-repeat;
+}
+
+.img-Master {
+    background: url(../images/bank-logo/master-card.png) no-repeat;
+}
+.img-VRB {
+    background: url(../images/bank-logo/viet-nga-bank.png) no-repeat;
+}
+.img-PVCombank{
+	background: url(../images/bank-logo/pvcombank.png) no-repeat;
+}
+.img-choosedrop {
+    padding-left: 80px !important;
+    background-size: 80px 45px;
+}
+
+.display-hide {
+    display: none;
+}
+@media only screen and (max-width: 480px) {
+    .giaodich {
+        zoom: 90%;
+    }
+    .head-title{margin:0}
+	.container-pay{padding:0}
+	.giaodich .text span {padding: 0; color:#333 !important}
+	.head-title .col-md-8{text-align:center;}
+
+    .chosen-container.chosen-container-single{
+        width: 75% !important;
+        margin: 0 auto;
+        display: block;
+    }
+    .chosen-drop.content-scroll{
+        font-size: 15px !important;
+    }
+	.giaodich td, .giaodich .text{
+        color:#1d6bca !important;
+	}
+    .chosen-container .chosen-results{
+        overflow:auto;
+        height:224px;
+    }
+}
+@media only screen and (min-width:321px) and (max-width:480px){
+    .giaodich .text{letter-spacing: -2px !important;}
+    .lbtext{width:120px}
+}
+@media only screen and (max-width: 320px) {
+    .pay-logo {
+        padding: 0 !important;
+    }
+    .giaodich table.text{ width:70%}
+    .support {
+        PADDING-right: 10px;
+        padding-left: 0;
+    }
+
+    .giaodich {
+        zoom: 90%;
+    }
+	.container-pay{padding:0}
+	.giaodich .text span {padding: 0;}
+	.head-title .col-md-8{text-align:center;}
+	.giaodich .text{letter-spacing: -2px !important;}
+	#onlineBanking .panel-body, #internationCard  .panel-body{padding:0 5px}
+	.lbtext{width:100px}
+}
+
+@media only screen and (max-width: 310px) {
+    .lbtext{width:100px}
+        .giaodich img {
+            width: 50px;
+            margin: 0 5px 0 0;
+        }
+
+    .panel-title {
+        padding: 0px;
+    }
+
+    .panel-default .icon-img {
+        width: 45px;
+        border-radius: 5px;
+        margin: 10px 12px;
+    }
+    .giaodich .text{font-size:13px}
+    .panel-body {
+        padding: 5px;
+    }
+    .container-pay{padding:0}
+    .giaodich .col-md-12{
+        padding: 0 0 0 10px;
+    }
+}
+
+.has-error .help-block, .has-error .control-label, .has-error .radio, .has-error .checkbox, .has-error .radio-inline, .has-error .checkbox-inline, .has-error.radio label, .has-error.checkbox label, .has-error.radio-inline label, .has-error.checkbox-inline label {
+    color: red;
+}
+
+/*.has-error .input-group-addon {
+    color: red;
+    background-color: #FFD7D7;
+}
+
+.has-error .form-control-feedback {
+    color: red;
+}*/
+.bv-form .help-block {
+    font-weight: 400;
+}
+@media(max-height:600px) and (min-width:380px) and (max-width:767px) and (orientation:landscape) {
+    .popup .box-popup .img2{
+        width: 20% !important;
+            margin: 10px 0 !important;
+    }
+    .popup .box-popup .img1{
+        width: 35% !important;
+    }
+}
+
+#trust_device{
+    margin-left: 0;
+    float: left;
+    position: initial;
+    margin-right: 5px;
+}
+#matrix_secure {font-size:13px}
+#matrix_secure b{font-weight:500}
+
+.box-nganhang .bank-logo li:hover img {
+    border-color: #0088e6;
+}

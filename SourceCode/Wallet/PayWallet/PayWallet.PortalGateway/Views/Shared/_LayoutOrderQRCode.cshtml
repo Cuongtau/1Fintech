@@ -1,0 +1,45 @@
+﻿
+@{
+    var language = PayWallet.PortalGateway.Utils.LanguageHelper.GetCurrentLanguage();
+    var languageId = PayWallet.PortalGateway.Utils.LanguageHelper.GetLanguageId(language);
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;subset=vietnamese" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="@(languageId == 1 ? "V&#237; điện tử- Cổng thanh to&#225;n VTC Pay" : "eWallet - Payment Gateway VTC Pay")" />
+    <meta name="keyword" content="@(languageId == 1 ? "V&#237; điện tử- Cổng thanh to&#225;n VTC Pay" : "eWallet - Payment Gateway VTC Pay")" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://beta-pay.vtc.vn/portalgateway/" />
+    <meta property="og:site_name" content="@(languageId == 1 ? "Ví điện tử - Cổng thanh toán điện tử VTC Pay" : "eWallet - Payment Gateway VTC Pay")" />
+    <meta property="og:image" content="@(languageId == 1 ? "V&#237; điện tử- Cổng thanh to&#225;n VTC Pay" : "eWallet - Payment Gateway VTC Pay")" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="300" />
+    <meta property="og:image:height" content="300" />
+    <meta property="og:title" content="@(languageId == 1 ? "V&#237; điện tử- Cổng thanh to&#225;n VTC Pay" : "eWallet - Payment Gateway VTC Pay")" />
+    <meta property="og:description" content="@(languageId == 1 ? "V&#237; điện tử- Cổng thanh to&#225;n VTC Pay" : "eWallet - Payment Gateway VTC Pay")" />
+
+    <link rel="shortcut icon" type="image/png" href="~/favicon.ico">
+    <title>@ViewBag.Title</title>
+
+    <link rel="stylesheet" href="~/Content/owl.carousel2.css">
+    <link href="~/Content/style-qr.css" rel="stylesheet" />
+    @Scripts.Render("~/bundles/jquery")
+    <script src="~/Scripts/utils.js"></script>
+    <script src="~/Scripts/common.js"></script>
+</head>
+<body>
+    <div class="bao">
+        <div class="wrapper" id="layers-wrapper">
+            @RenderBody()
+        </div> <!-- end wrapper -->
+    </div>
+
+    <script type="text/javascript" src="~/Scripts/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="~/Scripts/app.js"></script>
+
+</body>
+</html>

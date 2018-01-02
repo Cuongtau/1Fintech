@@ -1,0 +1,41 @@
+﻿@using Pay365.PortalGateway.Models
+@{
+    var language = Pay365.PortalGateway.Utils.LanguageHelper.GetCurrentLanguage();
+}
+@model List<BankInfo>
+<div class="form-group input-group" style="position: relative;width:100%">
+    <select data-placeholder="@Resources.PayPortal.txtSearch" id="chosenProvince" class="chosen-select form-control" style="text-transform:initial ;border-radius: 0; border: 1px #e4e4e4 solid; border-left: none;display:none; width:100%;">
+        <option value=""></option>
+        @if (Model != null && Model.Count > 0)
+        {
+            foreach (var bank in Model)
+            {
+                if (bank.BankType == 1)//Ngân hàng
+                {
+                    <option value="@(bank.BankCode + "|" + bank.BankType)" title="@Html.Raw(bank.BankName)" class="img-choosedrop img-@bank.BankCode" style="">@(bank.BankCode.ToUpper() == "NAVIBANK" ? "NCB" : bank.BankCode)</option>
+                }
+                else //Thẻ quốc tế
+                {
+                    <option value="@(bank.BankCode + "|" + bank.BankType)" title="@Html.Raw(bank.BankName)" class="img-choosedrop img-@bank.BankCode" style="">@Resources.PayPortal.txtCard @bank.BankCode</option>
+                }
+            }
+        }
+    </select>
+</div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.chosen-select').chosen({ allow_single_deselect: true, width: '100%' });
+        //$(".mCustomScrollbar").mCustomScrollbar();
+
+        $("#chosenProvince").change(function () {
+            var value = $(this).val();
+            if (value != '' && value != null && value != undefined) {
+                var detectValue = value.split('|');
+                var bankCode = detectValue[0];
+                var bankType = detectValue[1];
+
+                CheckBankPayment(bankCode, bankType, '@ViewBag.extendData', '', '@language');
+            }
+        });
+    });
+</script>

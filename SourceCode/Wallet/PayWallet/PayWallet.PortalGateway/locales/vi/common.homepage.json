@@ -1,0 +1,21 @@
+﻿{
+  "homepage": {
+    "IKnew": "Tôi đã biết",
+    "Retry": "Thử lại"
+  },
+  "payment": {
+    "minAmountInvalid": "Số tiền giao dịch không hợp lệ",
+    "cardInfoInvalid": "Thông tin thẻ không hợp lệ",
+    "createOrderErr": "Lỗi tạo đơn hàng",
+    "dataInvalid": "Dữ liệu truyền lên không hợp lệ",
+    "bankConnectErr": "Lỗi giao dịch tại hệ thống ngân hàng",
+    "requestInvalid": "Yêu cầu không hợp lệ",
+    "inputOTPPayment": "Vui lòng nhập mã bảo mật để hoàn tất thanh toán",
+    "transactionReview": "Giao dịch đang được xử lý",
+    "notEnoughAmount": "Tài khoản ngân hàng không đủ số dư để thanh toán",
+    "notRegisterIBanking": "Khách hàng chưa đăng ký dịch vụ tại ngân hàng",
+    "overAmountLimit": "Giao dịch vượt quá hạn mức cho phép",
+    "systemErr": "Hệ thống đang bân. Vui lòng thử lại sau !",
+    "errorOTP": "Mã xác thực không hợp lệ" 
+  }
+}

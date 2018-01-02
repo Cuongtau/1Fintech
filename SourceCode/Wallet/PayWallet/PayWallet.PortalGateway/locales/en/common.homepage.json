@@ -1,0 +1,21 @@
+﻿{
+  "homepage": {
+    "IKnew": "I Knew",
+    "Retry": "Retry"
+  },
+  "payment": {
+    "minAmountInvalid": "The payment amount is invalid",
+    "cardInfoInvalid": "Invalid payment card information",
+    "createOrderErr": "Initialization order failed",
+    "dataInvalid": "The data you provide is invalid.",
+    "bankConnectErr": "Transaction errors at the banking system",
+    "requestInvalid": "Request Invalid",
+    "inputOTPPayment": "Please enter secure code to finish payment.",
+    "transactionReview": "Transaction is reviewed ! Please wait for the next notification !",
+    "notEnoughAmount": "Banking accounts not enough balance for the bank account",
+    "notRegisterIBanking": "Customers have not registered for services at the bank",
+    "overAmountLimit": "The transaction exceeds the limit",
+    "systemErr": "The system is busy, please come back later !",
+    "errorOTP": "OTP is invalid !"
+  }
+}

@@ -1,0 +1,14 @@
+﻿
+<div class="popup">
+    <div class="box-popup">
+        <img src="@Html.Raw(PayWallet.Utils.Config.Domain)images/logo-purple.svg" width="120" alt="" class="img1"><br>
+        <p>@Html.Raw(ViewBag.Description)</p>
+        <button style="background: #9456ff;border-color: #9456ff;" class="btn btn-success btn-block" id="btnSuccess">@Html.Raw(ViewBag.btntext)</button>
+    </div>
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#btnSuccess").attr("onclick", "utils.closePopup();");
+    });
+</script>

@@ -1,0 +1,244 @@
+﻿@{
+    ViewBag.Title = "OnlineBanking";
+}
+@using PayWallet.PortalGateway.Utils
+@using PayWallet.PortalGateway.Models
+@model BankInfo
+
+@{
+    var ListBankMore = (List<BankInfo>)ViewBag.ListBank;
+    var language = LanguageHelper.GetCurrentLanguage();
+    var OrderData = (MerchantRequestData)ViewBag.OrderInfo;
+    var ObjectData = (ObjectExtend)ViewBag.ObjectExtend;
+    var LinkReturn = "";
+    var queryUrl = "";
+    if (ObjectData != null && !string.IsNullOrEmpty(ObjectData.queryUrl))
+    {
+        queryUrl = ObjectData.queryUrl;
+    }
+
+    if (!string.IsNullOrEmpty(queryUrl.ToString()))
+    {
+        LinkReturn = PayWallet.Utils.Config.Domain + "checkout.html" + queryUrl;
+    }
+}
+<script type="text/javascript">
+    var linkReturn = '@Html.Raw(LinkReturn)';
+    if (linkReturn != null && linkReturn != '') {
+        $("#returnHome").attr('href', linkReturn);
+    }
+</script>
+@if (ViewBag.StatusView == -1 || ViewBag.StatusView == -2)
+{
+    <script type="text/javascript">
+        utils.showPopup("@Resources.Checkout.NotGetOrderInfo");
+    </script>
+}
+else
+{
+    if (OrderData != null && OrderData.merchant_id > 0)
+    {
+        <div class="giaodich">
+            <div class="col-md-12">
+                <img src="@Html.Raw(string.IsNullOrEmpty(ViewBag.Logo) ? PayWallet.Utils.Config.Domain + ViewBag.Logo : ViewBag.Logo)" alt="" class="pull-left" height="60">
+                <table class="pull-left text">
+                    <tr>
+                        <td class="lbtext"><span>@Resources.PayPortal.TransactionCode:</span></td>
+                        <td>@OrderData.ordercode</td>
+                    </tr>
+                    <tr>
+                        <td class="lbtext"><span>@Resources.PayPortal.TransactionValue:</span></td>
+                        <td>@string.Format("{0:0,0} đ", OrderData.amount)</td>
+                    </tr>
+                    <tr>
+                        <td class="lbtext"><span>@Resources.PayPortal.Merchant:</span></td>
+                        <td>@(string.IsNullOrEmpty(ObjectData.providerName) ? string.Empty : ObjectData.providerName)</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="clearfix"></div>
+            
+
+        </div>
+
+        <div class="box-nganhang" style="padding: 15px 0;">
+            <div class="col-md-12">
+                <div class="col-md-8">
+                    <img src="@Html.Raw(PayWallet.Utils.Config.Domain)images/bank1.png" alt="" class="pull-left">
+                    <p class="pull-left text">
+                        @Resources.OnlineBanking.OnlineBankingTitle<br>
+                        <!--<span>Có phí</span>-->
+                    </p>
+                </div>
+
+                <div class="clearfix"></div>
+                <nav class="bank-logo" id="bank-list">
+                    <li><a href="javascript:;" title="@Model.BankName"><img src="@Html.Raw(string.IsNullOrEmpty(Model.Logo) ? PayWallet.Utils.Config.Domain + "images/bank-logo/sacombank.png" : Model.Logo)" alt="@Model.BankName"></a></li>
+
+
+                </nav>
+                <div class="col-md-6 no-padding-left">
+
+                    <label for="exampleInputEmail1" class="title-form">@Resources.OnlineBanking.PaymentInfo</label><br>
+                    <form id="verifyBank" method="post">
+                        <div id="contentCard">
+
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <span class="input-group-addon" style="border-radius: 0; border: 1px #e4e4e4 solid; border-right: none;padding-right:10px;"><i class="glyphicon glyphicon-user"></i></span>
+                                    <input class="form-control" id="AccountHolder" name="accHolder" placeholder="@Resources.OnlineBanking.AccountHolder" maxlength="30" style="padding-left:5px;border-radius: 0; border: 1px #e4e4e4 solid; border-left: none;text-transform:uppercase">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <span class="input-group-addon" style="border-radius: 0; border: 1px #e4e4e4 solid; border-right: none;padding-right:10px;"><i class="glyphicon glyphicon-credit-card"></i></span>
+                                    <input class="form-control" id="ATMCardNumber" name="cardNumber" onkeypress="utils.CheckOnlyNumber(this, event);" placeholder="@Resources.OnlineBanking.ATMCardNumber" maxlength="30" style="padding-left:5px; border-radius: 0; border: 1px #e4e4e4 solid; border-left: none;">
+                                </div>
+                            </div>
+
+                            @*<div class="form-group input-group" id="RegistrationDate" style="width:100%">
+                                <div class="date input-group">
+                                    <span class="input-group-addon" style="border-radius: 0; border: 1px #e4e4e4 solid; border-right: none;cursor: pointer;padding-right:10px;"><i class="glyphicon glyphicon-calendar"></i></span>
+                                    <input type='text' id="registrationDate" name="registerDate" maxlength="7" class="form-control" data-date-format="MM/YYYY" placeholder="@Resources.OnlineBanking.DateValidFrom" style="padding-left:5px;border-radius: 0; border: 1px #e4e4e4 solid; border-left: none;">
+                                </div>
+                            </div>*@
+                        </div>
+                        @*<div class="form-group" id="CustomCode" style="display:none">
+                            <div class="input-group">
+                                <span class="input-group-addon" style="border-radius: 0; border: 1px #e4e4e4 solid; border-right: none;padding-right:10px;"><i class="glyphicon glyphicon-user"></i></span>
+                                <input class="form-control" id="txtCustomCode" name="CustomCode" placeholder="Nhập số tài khoản" maxlength="30" style="padding-left:5px;border-radius: 0; border: 1px #e4e4e4 solid; border-left: none;">
+                            </div>
+                        </div>*@
+
+                        <center>
+                            <button id="btn_verifyBank" type="submit" class="btn btn-block btn-pay">@Resources.OnlineBanking.btnPayment</button>
+                        </center>
+                    </form>
+                </div>
+                <div class="col-md-6 no-padding-right">
+                </div>
+                <div class="clearfix"></div>
+                <div class="line"></div>
+
+            </div>
+            <div class="clearfix"></div>
+        </div>
+
+        <script type="text/javascript">
+                var bankCodePayment = '@Model.BankCode';
+                var cardNumber = '';
+                var accountHolder = '';
+                var merchantCode = '@OrderData.merchant_id';
+            $(document).ready(function () {
+                //$('#RegistrationDate').datetimepicker({
+                //    viewMode: 'months',
+                //    allowInputToggle: true,
+                //    format: 'MM/YYYY'
+                //});
+                $('#verifyBank').bootstrapValidator({
+                    message: 'This value is not valid',
+                    //live: 'submitted',
+                    feedbackIcons: {
+                        valid: 'glyphicon glyphicon-ok',
+                        invalid: 'glyphicon glyphicon-remove',
+                        validating: 'glyphicon glyphicon-refresh'
+                    },
+                    fields: {
+                        cardNumber: {
+                            message: '@Resources.OnlineBanking.ValidateCardNumber', //Vui lòng nhập số thẻ
+                            validators: {
+                                notEmpty: {
+                                    message: '@Resources.OnlineBanking.ValidateCardNumber'
+                                },
+                                regexp: {
+                                    regexp: /^[0-9]+$/,
+                                    message: '@Resources.OnlineBanking.ValidateNumber'
+                                }
+                            }
+                        },
+                        accHolder: {
+                            message: '@Resources.OnlineBanking.ValidateAccHolder', //Vui lòng nhập tên chủ thẻ.
+                            validators: {
+                                notEmpty: {
+                                    message: '@Resources.OnlineBanking.ValidateAccHolder'
+                                },
+                                regexp: {
+                                    regexp: /^[a-zA-Z0-9áàảãạăắằẳẵặâấầẩẫậđéèẻẽẹêếềểễệíìỉĩịóòỏõọôốồổỗộơớờởỡợúùủũụưứừửựýỳỷỹỵÁÀẢÃẠĂẮẰẲẴẶÂẤẦẨẪẬĐÉÈẺẼẸÊẾỀỂỄỆÍÌỈĨỊÓÒỎÕỌÔỐỒỔỖỘƠỚỜỞỠỢÚÙỦŨỤƯỨỪỬỰÝỲỶỸỴ\.\-\_\s]+$/,
+                                    message: '@Resources.OnlineBanking.ValidateAccHolderCharacters' //Tên chủ thẻ không được nhập các ký tự đặc biệt
+                                }
+                            }
+                        },
+                        @*registerDate: {
+                            message: '@Resources.OnlineBanking.ValidateRegisterDate', //Vui lòng chọn ngày đăng mở thẻ
+                            validators: {
+                                notEmpty: {
+                                    message: '@Resources.OnlineBanking.ValidateRegisterDate'
+                                }
+                            }
+                        },
+                        CustomCode: {
+                            message: '@Resources.OnlineBanking.ValidateCustomCode',
+                            validators: {
+                                notEmpty: {
+                                    message: '@Resources.OnlineBanking.ValidateCustomCode' //Vui lòng nhập mã khách hàng
+                                },
+                                regexp: {
+                                    regexp: /^[a-zA-Z0-9\.\-\_\s]+$/,
+                                    message: '@Resources.OnlineBanking.ValidateCustomCodeCharacters' //Mã khách hàng không được nhập các ký tự đặc biệt
+                                },
+                            }
+                        }*@
+                    }
+                })
+                .on('error.field.bv', function (e, data) {
+                    data.bv.disableSubmitButtons(false);
+                })
+                .on('success.field.bv', function (e, data) {
+                    data.bv.disableSubmitButtons(false);
+                })
+                .on('success.form.bv', function (e, data) {
+                    // Prevent submit form
+                    e.preventDefault();
+                    var $form = $(e.target),
+                        validator = $form.data('bootstrapValidator');
+                    VerifyBankNoDirect();
+                })
+                .on('error.form.bv', function (e, data) {
+                    // Active the panel element containing the first invalid element
+                    e.preventDefault();
+                    var $form = $(e.target),
+                    validator = $form.data('bootstrapValidator');
+                    $("html,body").animate({ scrollTop: $("#verifyBank").offset().top - 70 }, 'fast');
+                });
+
+                //$("#RegistrationDate").on("dp.change dp.show", function (e) {
+                //    $('#verifyBank').bootstrapValidator('revalidateField', 'registerDate');
+                //});
+            });
+            function VerifyBankNoDirect() {
+                cardNumber = $("#ATMCardNumber").val();
+                accountHolder = $("#AccountHolder").val();
+                //var registerDate = $("#registrationDate").val();
+
+                if (cardNumber == null || cardNumber == undefined || cardNumber == "") {
+                    bootbox.alert("@Resources.OnlineBanking.ValidateCardNumber");
+                    $("#ATMCardNumber").focus();
+                    return;
+                }
+                else if (accountHolder == null || accountHolder == undefined || accountHolder == "") {
+                    bootbox.alert("@Resources.OnlineBanking.ValidateAccHolder");
+                    $("#AccountHolder").focus();
+                    return;
+                }
+
+                BankVerifyData('@OrderData.merchant_id', '@OrderData.ordercode', bankCodePayment, accountHolder, cardNumber, '@OrderData.amount', '@OrderData.description');
+            };
+        </script>
+    }
+    else
+    {
+        <script type="text/javascript">
+            utils.showPopup(@Resources.Checkout.NotGetOrderInfo);
+        </script>
+    }
+}

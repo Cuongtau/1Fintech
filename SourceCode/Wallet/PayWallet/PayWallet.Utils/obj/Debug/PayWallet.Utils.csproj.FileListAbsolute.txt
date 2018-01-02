@@ -1,0 +1,9 @@
+D:\GitHub\1Fintech\SourceCode\Wallet\PayWallet\PayWallet.Utils\bin\Debug\PayWallet.Utils.dll
+D:\GitHub\1Fintech\SourceCode\Wallet\PayWallet\PayWallet.Utils\bin\Debug\PayWallet.Utils.pdb
+D:\GitHub\1Fintech\SourceCode\Wallet\PayWallet\PayWallet.Utils\bin\Debug\f7715.dll
+D:\GitHub\1Fintech\SourceCode\Wallet\PayWallet\PayWallet.Utils\bin\Debug\HtmlSanitizationLibrary.dll
+D:\GitHub\1Fintech\SourceCode\Wallet\PayWallet\PayWallet.Utils\bin\Debug\NLog.dll
+D:\GitHub\1Fintech\SourceCode\Wallet\PayWallet\PayWallet.Utils\obj\Debug\PayWallet.Utils.csprojResolveAssemblyReference.cache
+D:\GitHub\1Fintech\SourceCode\Wallet\PayWallet\PayWallet.Utils\obj\Debug\PayWallet.Utils.csproj.CoreCompileInputs.cache
+D:\GitHub\1Fintech\SourceCode\Wallet\PayWallet\PayWallet.Utils\obj\Debug\PayWallet.Utils.dll
+D:\GitHub\1Fintech\SourceCode\Wallet\PayWallet\PayWallet.Utils\obj\Debug\PayWallet.Utils.pdb

@@ -1,0 +1,645 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>E:\Publish Web\portalGatewayPay365</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="App_GlobalResources/Checkout.en.resx">
+      <publishTime>12/13/2017 10:31:11</publishTime>
+    </File>
+    <File Include="App_GlobalResources/Checkout.resx">
+      <publishTime>12/13/2017 10:31:11</publishTime>
+    </File>
+    <File Include="App_GlobalResources/OnlineBanking.en-US.resx">
+      <publishTime>12/13/2017 10:31:11</publishTime>
+    </File>
+    <File Include="App_GlobalResources/OnlineBanking.resx">
+      <publishTime>12/13/2017 10:31:11</publishTime>
+    </File>
+    <File Include="App_GlobalResources/Pay365Wallet.en-US.resx">
+      <publishTime>12/13/2017 10:31:11</publishTime>
+    </File>
+    <File Include="App_GlobalResources/Pay365Wallet.resx">
+      <publishTime>12/13/2017 10:31:11</publishTime>
+    </File>
+    <File Include="App_GlobalResources/Paygate.ButtonOrder.en.resx">
+      <publishTime>12/13/2017 10:31:11</publishTime>
+    </File>
+    <File Include="App_GlobalResources/Paygate.ButtonOrder.resx">
+      <publishTime>12/13/2017 10:31:11</publishTime>
+    </File>
+    <File Include="App_GlobalResources/PayPortal.en-US.resx">
+      <publishTime>12/18/2017 10:40:35</publishTime>
+    </File>
+    <File Include="App_GlobalResources/PayPortal.resx">
+      <publishTime>12/18/2017 10:40:32</publishTime>
+    </File>
+    <File Include="App_GlobalResources/Profile.Account.en-US.resx">
+      <publishTime>12/13/2017 10:31:11</publishTime>
+    </File>
+    <File Include="App_GlobalResources/Profile.Account.resx">
+      <publishTime>12/13/2017 10:31:11</publishTime>
+    </File>
+    <File Include="App_GlobalResources/Response.Message.en-US.resx">
+      <publishTime>12/13/2017 10:31:11</publishTime>
+    </File>
+    <File Include="App_GlobalResources/Response.Message.resx">
+      <publishTime>12/13/2017 10:31:11</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>12/04/2017 09:23:43</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.pdb">
+      <publishTime>12/04/2017 09:23:43</publishTime>
+    </File>
+    <File Include="bin/HtmlSanitizationLibrary.dll">
+      <publishTime>09/09/2017 14:53:57</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>12/04/2017 09:23:49</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>12/04/2017 09:23:50</publishTime>
+    </File>
+    <File Include="bin/NLog.dll">
+      <publishTime>09/09/2017 14:53:55</publishTime>
+    </File>
+    <File Include="bin/Pay365.PortalGateway.dll">
+      <publishTime>12/18/2017 15:00:18</publishTime>
+    </File>
+    <File Include="bin/Pay365.PortalGateway.pdb">
+      <publishTime>12/18/2017 15:00:18</publishTime>
+    </File>
+    <File Include="bin/Pay365.Utils.dll">
+      <publishTime>12/18/2017 15:00:17</publishTime>
+    </File>
+    <File Include="bin/Pay365.Utils.pdb">
+      <publishTime>12/18/2017 15:00:17</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Formatting.dll">
+      <publishTime>12/04/2017 09:23:47</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>12/04/2017 09:23:47</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.dll">
+      <publishTime>12/04/2017 09:23:47</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.WebHost.dll">
+      <publishTime>12/04/2017 09:23:47</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>12/04/2017 09:23:47</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>12/04/2017 09:23:47</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>12/04/2017 09:23:47</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>12/04/2017 09:23:47</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>12/04/2017 09:23:47</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>12/04/2017 09:23:47</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>12/04/2017 09:23:51</publishTime>
+    </File>
+    <File Include="Config/App.config">
+      <publishTime>12/13/2017 10:31:11</publishTime>
+    </File>
+    <File Include="Content/bootstrap-chosen.css">
+      <publishTime>12/13/2017 10:31:11</publishTime>
+    </File>
+    <File Include="Content/bootstrap-error-page.css">
+      <publishTime>12/13/2017 10:31:11</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.css">
+      <publishTime>12/13/2017 10:31:11</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.css.map">
+      <publishTime>12/13/2017 10:31:11</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.min.css">
+      <publishTime>12/13/2017 10:31:11</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css">
+      <publishTime>12/13/2017 10:31:11</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css.map">
+      <publishTime>12/13/2017 10:31:11</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css">
+      <publishTime>12/13/2017 10:31:11</publishTime>
+    </File>
+    <File Include="Content/common.css">
+      <publishTime>12/18/2017 11:05:50</publishTime>
+    </File>
+    <File Include="Content/datetimepicker/bootstrap-datetimepicker.css">
+      <publishTime>12/13/2017 10:31:11</publishTime>
+    </File>
+    <File Include="Content/jquery.mCustomScrollbar.css">
+      <publishTime>12/13/2017 10:31:11</publishTime>
+    </File>
+    <File Include="Content/respons.css">
+      <publishTime>12/13/2017 10:31:11</publishTime>
+    </File>
+    <File Include="Content/simple-sidebar.css">
+      <publishTime>12/13/2017 10:31:11</publishTime>
+    </File>
+    <File Include="Content/Site.css">
+      <publishTime>12/13/2017 10:31:11</publishTime>
+    </File>
+    <File Include="Content/style-qr.css">
+      <publishTime>12/13/2017 10:31:11</publishTime>
+    </File>
+    <File Include="Content/Validation/bootstrapValidator.css">
+      <publishTime>12/13/2017 10:31:11</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>12/13/2017 10:31:11</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.eot">
+      <publishTime>12/13/2017 10:31:12</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.svg">
+      <publishTime>12/13/2017 10:31:12</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>12/13/2017 10:31:12</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff">
+      <publishTime>12/13/2017 10:31:12</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff2">
+      <publishTime>12/13/2017 10:31:12</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>12/13/2017 10:31:11</publishTime>
+    </File>
+    <File Include="images/bank-logo/ab-bank.png">
+      <publishTime>12/13/2017 10:31:12</publishTime>
+    </File>
+    <File Include="images/bank-logo/acb-bank.png">
+      <publishTime>12/13/2017 10:31:12</publishTime>
+    </File>
+    <File Include="images/bank-logo/acb.png">
+      <publishTime>12/13/2017 10:31:12</publishTime>
+    </File>
+    <File Include="images/bank-logo/agribank.png">
+      <publishTime>12/13/2017 10:31:12</publishTime>
+    </File>
+    <File Include="images/bank-logo/atm.png">
+      <publishTime>12/13/2017 10:31:12</publishTime>
+    </File>
+    <File Include="images/bank-logo/bac-a-bank.png">
+      <publishTime>12/13/2017 10:31:12</publishTime>
+    </File>
+    <File Include="images/bank-logo/baca-bank.png">
+      <publishTime>12/13/2017 10:31:12</publishTime>
+    </File>
+    <File Include="images/bank-logo/baoviet-bank.png">
+      <publishTime>12/13/2017 10:31:12</publishTime>
+    </File>
+    <File Include="images/bank-logo/bidv-bank.png">
+      <publishTime>12/13/2017 10:31:12</publishTime>
+    </File>
+    <File Include="images/bank-logo/bidv.png">
+      <publishTime>12/13/2017 10:31:12</publishTime>
+    </File>
+    <File Include="images/bank-logo/dong-a-bank.png">
+      <publishTime>12/13/2017 10:31:12</publishTime>
+    </File>
+    <File Include="images/bank-logo/donga-bank.png">
+      <publishTime>12/13/2017 10:31:12</publishTime>
+    </File>
+    <File Include="images/bank-logo/eximbank.png">
+      <publishTime>12/13/2017 10:31:12</publishTime>
+    </File>
+    <File Include="images/bank-logo/gp-bank.png">
+      <publishTime>12/13/2017 10:31:12</publishTime>
+    </File>
+    <File Include="images/bank-logo/hd-bank.png">
+      <publishTime>12/13/2017 10:31:12</publishTime>
+    </File>
+    <File Include="images/bank-logo/icon-hover.png">
+      <publishTime>12/13/2017 10:31:12</publishTime>
+    </File>
+    <File Include="images/bank-logo/jcb-bank.png">
+      <publishTime>12/13/2017 10:31:12</publishTime>
+    </File>
+    <File Include="images/bank-logo/kienlong-bank.png">
+      <publishTime>12/13/2017 10:31:12</publishTime>
+    </File>
+    <File Include="images/bank-logo/lienviet-bank.png">
+      <publishTime>12/13/2017 10:31:12</publishTime>
+    </File>
+    <File Include="images/bank-logo/lienvietpost-bank.png">
+      <publishTime>12/13/2017 10:31:12</publishTime>
+    </File>
+    <File Include="images/bank-logo/maritime-bank.png">
+      <publishTime>12/13/2017 10:31:12</publishTime>
+    </File>
+    <File Include="images/bank-logo/master-card.png">
+      <publishTime>12/13/2017 10:31:12</publishTime>
+    </File>
+    <File Include="images/bank-logo/mb-bank.png">
+      <publishTime>12/13/2017 10:31:12</publishTime>
+    </File>
+    <File Include="images/bank-logo/nam-a-bank.png">
+      <publishTime>12/13/2017 10:31:12</publishTime>
+    </File>
+    <File Include="images/bank-logo/nama-bank.png">
+      <publishTime>12/13/2017 10:31:12</publishTime>
+    </File>
+    <File Include="images/bank-logo/navi-bank.png">
+      <publishTime>12/13/2017 10:31:12</publishTime>
+    </File>
+    <File Include="images/bank-logo/navibank.png">
+      <publishTime>12/13/2017 10:31:12</publishTime>
+    </File>
+    <File Include="images/bank-logo/ocb-bank.png">
+      <publishTime>12/13/2017 10:31:12</publishTime>
+    </File>
+    <File Include="images/bank-logo/ocb.png">
+      <publishTime>12/13/2017 10:31:12</publishTime>
+    </File>
+    <File Include="images/bank-logo/ocean-bank.png">
+      <publishTime>12/13/2017 10:31:12</publishTime>
+    </File>
+    <File Include="images/bank-logo/oceanbank.png">
+      <publishTime>12/13/2017 10:31:12</publishTime>
+    </File>
+    <File Include="images/bank-logo/other-bank.png">
+      <publishTime>12/13/2017 10:31:12</publishTime>
+    </File>
+    <File Include="images/bank-logo/pg-bank.png">
+      <publishTime>12/13/2017 10:31:12</publishTime>
+    </File>
+    <File Include="images/bank-logo/pvcombank.png">
+      <publishTime>12/13/2017 10:31:12</publishTime>
+    </File>
+    <File Include="images/bank-logo/sacombank.png">
+      <publishTime>12/13/2017 10:31:12</publishTime>
+    </File>
+    <File Include="images/bank-logo/saigon-bank.png">
+      <publishTime>12/13/2017 10:31:12</publishTime>
+    </File>
+    <File Include="images/bank-logo/scb-bank.png">
+      <publishTime>12/13/2017 10:31:13</publishTime>
+    </File>
+    <File Include="images/bank-logo/sea-bank.png">
+      <publishTime>12/13/2017 10:31:13</publishTime>
+    </File>
+    <File Include="images/bank-logo/seabank.png">
+      <publishTime>12/13/2017 10:31:13</publishTime>
+    </File>
+    <File Include="images/bank-logo/shb-bank.png">
+      <publishTime>12/13/2017 10:31:13</publishTime>
+    </File>
+    <File Include="images/bank-logo/shb.png">
+      <publishTime>12/13/2017 10:31:13</publishTime>
+    </File>
+    <File Include="images/bank-logo/techcom-bank.png">
+      <publishTime>12/13/2017 10:31:13</publishTime>
+    </File>
+    <File Include="images/bank-logo/techcombank.png">
+      <publishTime>12/13/2017 10:31:13</publishTime>
+    </File>
+    <File Include="images/bank-logo/tp-bank.png">
+      <publishTime>12/13/2017 10:31:13</publishTime>
+    </File>
+    <File Include="images/bank-logo/vib-bank.png">
+      <publishTime>12/13/2017 10:31:13</publishTime>
+    </File>
+    <File Include="images/bank-logo/vib.png">
+      <publishTime>12/13/2017 10:31:13</publishTime>
+    </File>
+    <File Include="images/bank-logo/viet-a-bank.png">
+      <publishTime>12/13/2017 10:31:13</publishTime>
+    </File>
+    <File Include="images/bank-logo/vieta-bank.png">
+      <publishTime>12/13/2017 10:31:13</publishTime>
+    </File>
+    <File Include="images/bank-logo/vietcombank.png">
+      <publishTime>12/13/2017 10:31:13</publishTime>
+    </File>
+    <File Include="images/bank-logo/vietin-bank.png">
+      <publishTime>12/13/2017 10:31:13</publishTime>
+    </File>
+    <File Include="images/bank-logo/viettinbank.png">
+      <publishTime>12/13/2017 10:31:13</publishTime>
+    </File>
+    <File Include="images/bank-logo/visa.png">
+      <publishTime>12/13/2017 10:31:13</publishTime>
+    </File>
+    <File Include="images/bank-logo/vp-bank.png">
+      <publishTime>12/13/2017 10:31:13</publishTime>
+    </File>
+    <File Include="images/bank1.png">
+      <publishTime>12/18/2017 11:09:09</publishTime>
+    </File>
+    <File Include="images/bank2.png">
+      <publishTime>12/13/2017 10:31:12</publishTime>
+    </File>
+    <File Include="images/banner.gif">
+      <publishTime>12/13/2017 10:31:12</publishTime>
+    </File>
+    <File Include="images/banner.jpg">
+      <publishTime>12/18/2017 10:50:12</publishTime>
+    </File>
+    <File Include="images/bg-login.gif">
+      <publishTime>12/13/2017 10:31:12</publishTime>
+    </File>
+    <File Include="images/bg1.gif">
+      <publishTime>12/13/2017 10:31:12</publishTime>
+    </File>
+    <File Include="images/card.jpg">
+      <publishTime>12/13/2017 10:31:12</publishTime>
+    </File>
+    <File Include="images/check_ok.png">
+      <publishTime>12/13/2017 10:31:12</publishTime>
+    </File>
+    <File Include="images/chosen-sprite%402x.png">
+      <publishTime>12/13/2017 10:31:12</publishTime>
+    </File>
+    <File Include="images/chosen-sprite.png">
+      <publishTime>12/13/2017 10:31:12</publishTime>
+    </File>
+    <File Include="images/close-btn.png">
+      <publishTime>12/13/2017 10:31:12</publishTime>
+    </File>
+    <File Include="images/en.png">
+      <publishTime>12/13/2017 10:31:12</publishTime>
+    </File>
+    <File Include="images/error-page/3D-Error-401.jpg">
+      <publishTime>12/13/2017 10:31:13</publishTime>
+    </File>
+    <File Include="images/error-page/404-dark.png">
+      <publishTime>12/13/2017 10:31:13</publishTime>
+    </File>
+    <File Include="images/error-page/404-light.gif">
+      <publishTime>12/13/2017 10:31:13</publishTime>
+    </File>
+    <File Include="images/error-page/404.jpg">
+      <publishTime>12/13/2017 10:31:13</publishTime>
+    </File>
+    <File Include="images/error-page/500error.png">
+      <publishTime>12/13/2017 10:31:13</publishTime>
+    </File>
+    <File Include="images/error-page/ajax-loader.gif">
+      <publishTime>12/13/2017 10:31:13</publishTime>
+    </File>
+    <File Include="images/error-page/bg_btn.png">
+      <publishTime>12/13/2017 10:31:13</publishTime>
+    </File>
+    <File Include="images/error-page/btn.png">
+      <publishTime>12/13/2017 10:31:13</publishTime>
+    </File>
+    <File Include="images/error-page/error400.jpg">
+      <publishTime>12/13/2017 10:31:13</publishTime>
+    </File>
+    <File Include="images/error-page/_error500.png">
+      <publishTime>12/13/2017 10:31:13</publishTime>
+    </File>
+    <File Include="images/facebook.png">
+      <publishTime>12/13/2017 10:31:12</publishTime>
+    </File>
+    <File Include="images/face_icon.jpg">
+      <publishTime>12/13/2017 10:31:12</publishTime>
+    </File>
+    <File Include="images/fail.png">
+      <publishTime>12/13/2017 10:31:12</publishTime>
+    </File>
+    <File Include="images/false.png">
+      <publishTime>12/13/2017 10:31:12</publishTime>
+    </File>
+    <File Include="images/fshare.png">
+      <publishTime>12/13/2017 10:31:12</publishTime>
+    </File>
+    <File Include="images/google+.png">
+      <publishTime>12/13/2017 10:31:12</publishTime>
+    </File>
+    <File Include="images/google_icon.jpg">
+      <publishTime>12/13/2017 10:31:12</publishTime>
+    </File>
+    <File Include="images/img-slide1.png">
+      <publishTime>12/13/2017 10:31:12</publishTime>
+    </File>
+    <File Include="images/img1.png">
+      <publishTime>12/13/2017 10:31:12</publishTime>
+    </File>
+    <File Include="images/img2.png">
+      <publishTime>12/13/2017 10:31:12</publishTime>
+    </File>
+    <File Include="images/img3.png">
+      <publishTime>12/13/2017 10:31:12</publishTime>
+    </File>
+    <File Include="images/in_icon.jpg">
+      <publishTime>12/13/2017 10:31:12</publishTime>
+    </File>
+    <File Include="images/language-header.png">
+      <publishTime>12/13/2017 10:31:12</publishTime>
+    </File>
+    <File Include="images/linkedin.png">
+      <publishTime>12/13/2017 10:31:12</publishTime>
+    </File>
+    <File Include="images/loading.gif">
+      <publishTime>12/13/2017 10:31:12</publishTime>
+    </File>
+    <File Include="images/logo-purple.svg">
+      <publishTime>12/18/2017 10:58:01</publishTime>
+    </File>
+    <File Include="images/logo-white.svg">
+      <publishTime>12/18/2017 10:37:39</publishTime>
+    </File>
+    <File Include="images/logo.png">
+      <publishTime>12/13/2017 10:31:12</publishTime>
+    </File>
+    <File Include="images/logo_365.png">
+      <publishTime>12/13/2017 10:31:12</publishTime>
+    </File>
+    <File Include="images/ok.png">
+      <publishTime>12/13/2017 10:31:12</publishTime>
+    </File>
+    <File Include="images/premier.jpg">
+      <publishTime>12/13/2017 10:31:12</publishTime>
+    </File>
+    <File Include="images/vn.png">
+      <publishTime>12/13/2017 10:31:12</publishTime>
+    </File>
+    <File Include="images/vtcpay-logo.png">
+      <publishTime>12/13/2017 10:31:12</publishTime>
+    </File>
+    <File Include="images/vtcpay.png">
+      <publishTime>12/13/2017 10:31:12</publishTime>
+    </File>
+    <File Include="images/win.png">
+      <publishTime>12/13/2017 10:31:12</publishTime>
+    </File>
+    <File Include="locales/en/common.homepage.json">
+      <publishTime>12/13/2017 10:31:13</publishTime>
+    </File>
+    <File Include="locales/vi/common.homepage.json">
+      <publishTime>12/13/2017 10:31:13</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>12/13/2017 10:31:11</publishTime>
+    </File>
+    <File Include="Scripts/app.js">
+      <publishTime>12/13/2017 10:31:13</publishTime>
+    </File>
+    <File Include="Scripts/bootbox.min.js">
+      <publishTime>12/13/2017 10:31:13</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js">
+      <publishTime>12/13/2017 10:31:13</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js">
+      <publishTime>12/13/2017 10:31:13</publishTime>
+    </File>
+    <File Include="Scripts/chosen.jquery.js">
+      <publishTime>12/13/2017 10:31:13</publishTime>
+    </File>
+    <File Include="Scripts/client-custom.min.js">
+      <publishTime>12/13/2017 10:31:13</publishTime>
+    </File>
+    <File Include="Scripts/common.js">
+      <publishTime>12/14/2017 14:26:53</publishTime>
+    </File>
+    <File Include="Scripts/datetimepicker/bootstrap-datetimepicker.js">
+      <publishTime>12/13/2017 10:31:14</publishTime>
+    </File>
+    <File Include="Scripts/datetimepicker/moment.js">
+      <publishTime>12/13/2017 10:31:14</publishTime>
+    </File>
+    <File Include="Scripts/device.js">
+      <publishTime>12/13/2017 10:31:13</publishTime>
+    </File>
+    <File Include="Scripts/i18next-1.6.3.js">
+      <publishTime>12/13/2017 10:31:14</publishTime>
+    </File>
+    <File Include="Scripts/i18next-1.6.3.min.js">
+      <publishTime>12/13/2017 10:31:13</publishTime>
+    </File>
+    <File Include="Scripts/ie-emulation-modes-warning.js">
+      <publishTime>12/13/2017 10:31:13</publishTime>
+    </File>
+    <File Include="Scripts/ie10-viewport-bug-workaround.js">
+      <publishTime>12/13/2017 10:31:13</publishTime>
+    </File>
+    <File Include="Scripts/ie8-responsive-file-warning.js">
+      <publishTime>12/13/2017 10:31:13</publishTime>
+    </File>
+    <File Include="Scripts/intlTelInput.js">
+      <publishTime>12/13/2017 10:31:13</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.js">
+      <publishTime>12/13/2017 10:31:14</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.js">
+      <publishTime>12/13/2017 10:31:14</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.map">
+      <publishTime>12/13/2017 10:31:14</publishTime>
+    </File>
+    <File Include="Scripts/jquery.mCustomScrollbar.concat.min.js">
+      <publishTime>12/13/2017 10:31:13</publishTime>
+    </File>
+    <File Include="Scripts/modernizr-2.6.2.js">
+      <publishTime>12/13/2017 10:31:13</publishTime>
+    </File>
+    <File Include="Scripts/npm.js">
+      <publishTime>12/13/2017 10:31:13</publishTime>
+    </File>
+    <File Include="Scripts/pdfmake.min.js">
+      <publishTime>12/13/2017 10:31:14</publishTime>
+    </File>
+    <File Include="Scripts/respond.js">
+      <publishTime>12/13/2017 10:31:14</publishTime>
+    </File>
+    <File Include="Scripts/respond.min.js">
+      <publishTime>12/13/2017 10:31:14</publishTime>
+    </File>
+    <File Include="Scripts/utils.js">
+      <publishTime>12/13/2017 17:31:07</publishTime>
+    </File>
+    <File Include="Scripts/validation/bootstrapValidator.js">
+      <publishTime>12/13/2017 10:31:14</publishTime>
+    </File>
+    <File Include="Scripts/vfs_fonts.js">
+      <publishTime>12/13/2017 10:31:15</publishTime>
+    </File>
+    <File Include="Views/Common/OtherPaymentMethods.cshtml">
+      <publishTime>12/13/2017 10:31:14</publishTime>
+    </File>
+    <File Include="Views/Common/PopupView.cshtml">
+      <publishTime>12/13/2017 10:31:14</publishTime>
+    </File>
+    <File Include="Views/Common/PopupViewCommon.cshtml">
+      <publishTime>12/13/2017 10:31:14</publishTime>
+    </File>
+    <File Include="Views/Common/SearchBank.cshtml">
+      <publishTime>12/13/2017 10:31:14</publishTime>
+    </File>
+    <File Include="Views/Error/ErrorBadRequest.cshtml">
+      <publishTime>12/13/2017 10:31:14</publishTime>
+    </File>
+    <File Include="Views/Error/ErrorInternalServer.cshtml">
+      <publishTime>12/13/2017 10:31:14</publishTime>
+    </File>
+    <File Include="Views/Error/ErrorNotPage.cshtml">
+      <publishTime>12/13/2017 10:31:14</publishTime>
+    </File>
+    <File Include="Views/Error/ErrorPermission.cshtml">
+      <publishTime>12/13/2017 10:31:14</publishTime>
+    </File>
+    <File Include="Views/Error/ErrorUnAuthorize.cshtml">
+      <publishTime>12/13/2017 10:31:14</publishTime>
+    </File>
+    <File Include="Views/Home/Index.cshtml">
+      <publishTime>12/13/2017 10:31:14</publishTime>
+    </File>
+    <File Include="Views/Home/OnlineBanking.cshtml">
+      <publishTime>12/13/2017 10:31:14</publishTime>
+    </File>
+    <File Include="Views/PayPortal/pup_ConfirmCodeBank.cshtml">
+      <publishTime>12/18/2017 11:05:04</publishTime>
+    </File>
+    <File Include="Views/PayPortal/VerifyBankNoDirect.cshtml">
+      <publishTime>12/13/2017 10:31:14</publishTime>
+    </File>
+    <File Include="Views/Shared/Error.cshtml">
+      <publishTime>12/13/2017 10:31:14</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>12/18/2017 10:48:14</publishTime>
+    </File>
+    <File Include="Views/Shared/_LayoutError.cshtml">
+      <publishTime>12/13/2017 10:31:14</publishTime>
+    </File>
+    <File Include="Views/Shared/_LayoutOrder.cshtml">
+      <publishTime>12/13/2017 10:31:14</publishTime>
+    </File>
+    <File Include="Views/Shared/_LayoutOrderQRCode.cshtml">
+      <publishTime>12/13/2017 10:31:14</publishTime>
+    </File>
+    <File Include="Views/Web.config">
+      <publishTime>12/13/2017 10:31:14</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>12/13/2017 10:31:14</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>12/18/2017 15:00:19</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

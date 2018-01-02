@@ -1,0 +1,209 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+
+/* 
+	Author: MIKEN;
+	Fullname: mikenlanggio;
+	Signature: MIKEN;
+	Company: VTC Intecom;
+*/
+
+
+/* ----------------------------------------------------------------Reset Css --------------------------------------------*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn,
+em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt,
+var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption,
+tbody, tfoot, thead,i,em{
+	margin: 0;padding: 0;border: 0;outline: 0;
+	list-style: none;text-decoration: none;
+	font-style: normal;font-weight: normal;
+	box-sizing: border-box;
+	vertical-align: top;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	}
+
+a{
+	display: inline-block;
+}
+a:hover{
+	text-decoration: none
+}
+span{
+	font-size: inherit;
+	font-weight: inherit;
+	font-style: inherit;
+	color: inherit;
+}
+b{
+	font-weight: 700;
+	color: inherit;
+	font-style: inherit;
+	font-size: inherit;
+}
+
+img{
+	vertical-align: top
+}
+ *::after, *::before {-moz-box-sizing: inherit;box-sizing: inherit;}
+ table{border-collapse: collapse;}
+.clear{clear: both;}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+body {
+	line-height: normal;
+	font-family: 'Roboto', sans-serif;
+	/* width: 1900px; */
+	/* height: 1000px; */
+	-webkit-transform-origin: 0% 0%;
+	-moz-transform-origin: 0% 0%;
+	-o-transform-origin: 0% 0%;
+	transform-origin: 0% 0%;
+	overflow-x: hidden;
+}
+
+
+
+/* ----------------------------------------------------------------Font-faces --------------------------------------------*/
+
+@font-face{
+	src:url();
+	font-family: 
+}
+
+
+
+/* ----------------------------------------------------------------Main-Css--------------------------------------------*/
+
+
+
+
+*{ margin:0; padding:0;	box-sizing: border-box;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;-ms-box-sizing: border-box;-o-box-sizing: border-box; }
+
+.bao {
+    position: relative;
+    /* transform: translateX(28%); */
+    /* left: -50%; */
+}
+
+.main {
+    text-align: center;
+}
+
+.main .note {
+    color: #242424;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.main .img {
+    margin-bottom: 36px;
+}
+
+.main .des {
+    text-transform: uppercase;
+    color: #242424;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.main .tt {
+    color: #028dd4;
+    font-size: 36px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.wrapper{
+	width: 1140px;
+	margin:0 auto;
+	padding-top: 30px;
+	position: relative;
+	-webkit-transform-origin: 0% 0%;
+	-moz-transform-origin: 0% 0%;
+	-o-transform-origin: 0% 0%;
+	transform-origin: 0% 0%;
+}
+
+.trai {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    background: url(../images/bg-slide.png) no-repeat top center;
+}
+
+.trai .slide .owl-controls .owl-dots div span {
+    display: block;
+}
+
+.trai .slide .owl-controls .owl-dots {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+}
+
+.trai .slide .owl-controls .owl-dots div {
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    background: #bfbfc1;
+    -moz-border-radius: 50%;
+         border-radius: 50%;
+    margin: 0 5px;
+}
+
+.trai .slide .owl-controls .owl-dots div.active {
+    background: #4e4e4e;
+}
+
+.trai .slide {
+    width: 294px;
+    height: 260px;
+    -webkit-mask: url(../images/mask.png);
+    -webkit-mask-image: url(../images/mask.png);
+    mask-type: alpha;
+}
+
+.trai .slide .item {
+    width: 294px;
+    height: 260px;
+}
+
+@media(max-width: 1139px){
+	.bao{
+		transform: translateX(50%);
+		left: -50%;
+	}
+}
+@media(max-width: 768px){
+	.main .des{
+		font-size: 45px
+	}
+	.main .tt{
+		font-size: 60px
+	}
+	.main .note{
+		font-size: 40px;
+		line-height: 1.5;
+	}
+}

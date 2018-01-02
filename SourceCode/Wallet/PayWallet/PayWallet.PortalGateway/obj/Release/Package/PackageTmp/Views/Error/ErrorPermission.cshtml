@@ -1,0 +1,30 @@
+﻿@{
+    ViewBag.Title = "Error Page";
+    Layout = "~/Views/Shared/_LayoutError.cshtml";
+}
+<style>
+   .centering h2{color:#000}
+   body{
+       background:#fff
+   }
+</style>
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="col-lg-12">
+            <div class="centering text-center error-container">
+                <img src="@Html.Raw(Pay365.Utils.Config.Domain)images/error-page/404.jpg" />
+                <div class="text-center">
+                    <h2 class="without-margin">Don't worry. It's <span class="text-warning"><big>403</big></span> error only.</h2>
+                    <h4 class="text-warning">Access denied</h4>
+                </div>
+                <div class="text-center">
+                    <h3><small>Choose an option below</small></h3>
+                </div>
+                <hr>
+                <ul class="pager">
+                    <li><a href="@Html.Raw(Pay365.Utils.Config.Domain)">← Home</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

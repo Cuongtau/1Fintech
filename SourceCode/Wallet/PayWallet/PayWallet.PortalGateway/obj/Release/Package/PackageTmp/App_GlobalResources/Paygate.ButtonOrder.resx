@@ -1,0 +1,534 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AccSalerNotExits" xml:space="preserve">
+    <value>Tài khoản Paygate người nhận không tồn tại. Bạn vui lòng kiểm tra lại dữ liệu</value>
+  </data>
+  <data name="Address" xml:space="preserve">
+    <value>Địa chỉ</value>
+  </data>
+  <data name="Bank" xml:space="preserve">
+    <value>Ngân hàng</value>
+  </data>
+  <data name="BuyerEmail" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="BuyerName" xml:space="preserve">
+    <value>Tên người mua</value>
+  </data>
+  <data name="BuyerPhone" xml:space="preserve">
+    <value>Số di động</value>
+  </data>
+  <data name="DataTransferInvalid" xml:space="preserve">
+    <value>Dữ liệu truyền lên không hợp lệ. Bạn vui lòng kiểm tra lại</value>
+  </data>
+  <data name="DeliveryAddresss" xml:space="preserve">
+    <value>Địa chỉ nhận hàng</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Mô tả</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="ErrorCreateOrder" xml:space="preserve">
+    <value>Lỗi tạo tài hóa đơn. Bạn chờ đợi trong giây lát rồi thử lại</value>
+  </data>
+  <data name="eWallet" xml:space="preserve">
+    <value>Ví điện tử</value>
+  </data>
+  <data name="internationalPayment" xml:space="preserve">
+    <value>Tổ chức thanh toán quốc tế</value>
+  </data>
+  <data name="LessAccPGSaler" xml:space="preserve">
+    <value>Bạn phải điền tài khoản Paygate người bán</value>
+  </data>
+  <data name="LessEBankLogin" xml:space="preserve">
+    <value>Bạn phải truyền tài khoản đăng nhập eBank</value>
+  </data>
+  <data name="LessPhone" xml:space="preserve">
+    <value>Phải nhập số điện thoại</value>
+  </data>
+  <data name="LessWebsiteID" xml:space="preserve">
+    <value>Bạn phải truyền websiteID</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Họ và tên</value>
+  </data>
+  <data name="NoSelectPaymentType" xml:space="preserve">
+    <value>Bạn chưa chọn hình thức thanh toán</value>
+  </data>
+  <data name="Note" xml:space="preserve">
+    <value>Vui lòng chọn một trong các  phương thức  thanh toán dưới đây để tiếp tục. Tổng tiền thanh toán ứng với mỗi phương thức thanh toán được hiển thị dưới mỗi logo. Để biết chi tiết hướng dẫn thanh toán, vui lòng xem &lt;a href="https://paygate.vtc.vn/community/huong-dan/quy-trinh-rut-tien-19-98.html"&gt;tại đây...&lt;/a&gt;</value>
+  </data>
+  <data name="NotRate" xml:space="preserve">
+    <value>Chưa có đánh giá</value>
+  </data>
+  <data name="NotSupportTypePayment" xml:space="preserve">
+    <value>Bạn không được sử dụng hình thức thanh toán này. Vui lòng liên hệ với quản trị để được hỗ trợ</value>
+  </data>
+  <data name="NotVerify" xml:space="preserve">
+    <value>Chưa chứng thực</value>
+  </data>
+  <data name="Product" xml:space="preserve">
+    <value>Tên sản phẩm</value>
+  </data>
+  <data name="PaymentFail" xml:space="preserve">
+    <value>Thanh toán thất bại</value>
+  </data>
+  <data name="PaymentSuccess" xml:space="preserve">
+    <value>Giao dịch thành công. Thanh toán được bảo đảm bởi VTC Pay</value>
+  </data>
+  <data name="PaymentType" xml:space="preserve">
+    <value>Hình thức thanh toán</value>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>Tài khoản</value>
+  </data>
+  <data name="PhoneNotValid" xml:space="preserve">
+    <value>Vui lòng nhập số điện thoại người mua</value>
+  </data>
+  <data name="PhonsesSame" xml:space="preserve">
+    <value>Số tài khoản người bán và người mua phải khác nhau</value>
+  </data>
+  <data name="Price" xml:space="preserve">
+    <value>Giá trị đơn hàng</value>
+  </data>
+  <data name="Rate" xml:space="preserve">
+    <value>Uy tín</value>
+  </data>
+  <data name="SalerStatus" xml:space="preserve">
+    <value>Trạng thái</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Thanh toán đơn hàng</value>
+  </data>
+  <data name="TitleSeo" xml:space="preserve">
+    <value>thanh toán hóa đơn, đơn hàng, chọn hình thức thanh toán</value>
+  </data>
+  <data name="Verify" xml:space="preserve">
+    <value>Đã chứng thực</value>
+  </data>
+  <data name="VTCeBank" xml:space="preserve">
+    <value>VTC eBank</value>
+  </data>
+  <data name="WrongSignature" xml:space="preserve">
+    <value>Chữ ký sai</value>
+  </data>
+  <data name="Quantity" xml:space="preserve">
+    <value>Số lượng</value>
+  </data>
+  <data name="TotalAmount" xml:space="preserve">
+    <value>Tổng tiền:</value>
+  </data>
+  <data name="ButtonNotExits" xml:space="preserve">
+    <value>Nút thanh toán không tồn tại</value>
+  </data>
+  <data name="LessButtonCode" xml:space="preserve">
+    <value>Thiếu mã nút</value>
+  </data>
+  <data name="LessEBankAcc" xml:space="preserve">
+    <value>Thiếu tài khoản eBank của người bán để truyền VCoin vào. Bạn thông báo cho người bán cập nhật tài khoản eBank trong phần thông tin tổng hợp</value>
+  </data>
+  <data name="MsgTitle" xml:space="preserve">
+    <value>Thông báo</value>
+  </data>
+  <data name="MustInputMobile" xml:space="preserve">
+    <value>Bạn phải nhập số di động</value>
+  </data>
+  <data name="MustSelectPaymentType" xml:space="preserve">
+    <value>Bạn chưa chọn hình thức thanh toán</value>
+  </data>
+  <data name="CheckUserOrPass" xml:space="preserve">
+    <value>Bạn kiểm tra lại user hoặc pasword</value>
+  </data>
+  <data name="EmptyGoods" xml:space="preserve">
+    <value>Số lượng hàng đã hết</value>
+  </data>
+  <data name="RechargeMoneyByBank" xml:space="preserve">
+    <value>Nap tien qua ngan hang</value>
+  </data>
+  <data name="RequireDetail" xml:space="preserve">
+    <value>Yêu cầu chi tiết:</value>
+  </data>
+  <data name="ImmediatePayTitle" xml:space="preserve">
+    <value>[VTC Paygate]Thông báo giao dịch thanh toán ngay</value>
+  </data>
+  <data name="PaymentOnline" xml:space="preserve">
+    <value>Thanh toán online</value>
+  </data>
+  <data name="InProcessData" xml:space="preserve">
+    <value>Đang xử lý dữ liệu...</value>
+  </data>
+  <data name="SmallOrder" xml:space="preserve">
+    <value>Gía trị đơn hàng quá nhỏ. Đơn hàng tối thiểu phải từ 3000 trở lên</value>
+  </data>
+  <data name="ToolTipBuyerPhone_Text" xml:space="preserve">
+    <value>Bạn cần điền chính xác số điện thoại của bạn để nhận được tiền trong trường hợp giao dịch không thành công</value>
+  </data>
+  <data name="AddCard" xml:space="preserve">
+    <value>Thêm thẻ</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>Quay lại</value>
+  </data>
+  <data name="BankCardWallet" xml:space="preserve">
+    <value>Ví dựng thẻ</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Hủy</value>
+  </data>
+  <data name="Continue" xml:space="preserve">
+    <value>Tiếp tục</value>
+  </data>
+  <data name="DonationInfo" xml:space="preserve">
+    <value>Thông tin người quyên góp</value>
+  </data>
+  <data name="Footer1" xml:space="preserve">
+    <value>CỔNG THANH TOÁN ĐIỆN TỬ VTC PAY</value>
+  </data>
+  <data name="Footer2" xml:space="preserve">
+    <value>Giấy phép hoạt động do NHNN cấp ngày 24/02/2016 - số 31/GP</value>
+  </data>
+  <data name="Footer3" xml:space="preserve">
+    <value>Tổng đài hỗ trợ: 19001530 / Email: hotro.pay@vtc.vn</value>
+  </data>
+  <data name="ForgetPass" xml:space="preserve">
+    <value>Quên mật khẩu</value>
+  </data>
+  <data name="Help" xml:space="preserve">
+    <value>Hướng dẫn</value>
+  </data>
+  <data name="Hold3day" xml:space="preserve">
+    <value>Tạm giữ 3 ngày</value>
+  </data>
+  <data name="Hold5day" xml:space="preserve">
+    <value>Tạm giữ 5 ngày</value>
+  </data>
+  <data name="Hold7day" xml:space="preserve">
+    <value>Tạm giữ 7 ngày</value>
+  </data>
+  <data name="IncorrectODP" xml:space="preserve">
+    <value>Mật khảu ODP không đúng</value>
+  </data>
+  <data name="Infomation" xml:space="preserve">
+    <value>Thông tin</value>
+  </data>
+  <data name="InfomationCustom" xml:space="preserve">
+    <value>Thông tin khách hàng</value>
+  </data>
+  <data name="InfomationOrder" xml:space="preserve">
+    <value>Thông tin đơn hàng</value>
+  </data>
+  <data name="InfomationUnit" xml:space="preserve">
+    <value>Thông tin đơn vị chủ khoản</value>
+  </data>
+  <data name="InputMoney" xml:space="preserve">
+    <value>Vui lòng nhập số tiền</value>
+  </data>
+  <data name="InputODP" xml:space="preserve">
+    <value>Nhập mã ODP &lt;b&gt;</value>
+  </data>
+  <data name="InputODPPayment" xml:space="preserve">
+    <value>Vui lòng nhập ODP để hoàn tất thanh toán</value>
+  </data>
+  <data name="InputOTP" xml:space="preserve">
+    <value>Vui lòng nhập mã OTP</value>
+  </data>
+  <data name="InputOTPPayment" xml:space="preserve">
+    <value>Vui lòng nhập OTP để hoàn tất thanh toán</value>
+  </data>
+  <data name="InputPhone" xml:space="preserve">
+    <value>Vui lòng nhập số điện thoại</value>
+  </data>
+  <data name="Message1" xml:space="preserve">
+    <value>Không thể dủng thẻ liên kết</value>
+  </data>
+  <data name="Message2" xml:space="preserve">
+    <value>để thanh toán cho đơn hàng này. Vui lòng chọn thẻ liên kết khác</value>
+  </data>
+  <data name="Message3" xml:space="preserve">
+    <value>Số dư tài khoản không đủ để thanh toán</value>
+  </data>
+  <data name="MessageAccInActive" xml:space="preserve">
+    <value>Tài khoản chưa kích hoạt, vui lòng kích hoạt tại đây</value>
+  </data>
+  <data name="MessageAccountIncorect" xml:space="preserve">
+    <value>Tài khoản không hợp lệ</value>
+  </data>
+  <data name="MessageAccPassFail" xml:space="preserve">
+    <value>Tài khoản hoặc mật khẩu không chính xác</value>
+  </data>
+  <data name="MessageAttached" xml:space="preserve">
+    <value>Không có thẻ gắn kết, vui lòng chọn thêm thẻ gắn kết mới</value>
+  </data>
+  <data name="MessageBankCardWallet" xml:space="preserve">
+    <value>Lưu thẻ trong tài khoản Ví giúp bạn không cần nhập lại thông tin thẻ mỗi lần thanh toán, thẻ được bảo vệ bởi OTP/ODP hoặc 3D-Secure</value>
+  </data>
+  <data name="MessageBankCardWallet1" xml:space="preserve">
+    <value>Chọn Thanh toán có nghĩa bạn đồng ý với</value>
+  </data>
+  <data name="MessageBankCardWallet2" xml:space="preserve">
+    <value>Chính sách ví VTC Pay</value>
+  </data>
+  <data name="MessageBankCardWallet3" xml:space="preserve">
+    <value>Mã ODP đã được gửi đến số điện thoại/email đăng ký dịch vụ. Nếu không nhận được ODP, vui lòng soạn tin theo cú pháp PAY ODP gửi 19001530</value>
+  </data>
+  <data name="MessageErrorPayInternalCard" xml:space="preserve">
+    <value>Không thể thanh toán bằng thẻ quốc tế, vui lòng chọn hình thức thanh toán khác</value>
+  </data>
+  <data name="MessageErrorPayment" xml:space="preserve">
+    <value>Không thể thanh toán qua ngân hàng nội địa, vui lòng chọn hình thức thanh toán khác</value>
+  </data>
+  <data name="MessageIf" xml:space="preserve">
+    <value>Nếu tài khoản Pay đã gắn kết thẻ Quốc tế, vui lòng chọn</value>
+  </data>
+  <data name="MessageIncorectPass" xml:space="preserve">
+    <value>Mật khẩu không chính xác</value>
+  </data>
+  <data name="MessageInputAcc" xml:space="preserve">
+    <value>Phải nhập tài khoản và mật khẩu VTCPay</value>
+  </data>
+  <data name="MessageNote" xml:space="preserve">
+    <value>Số tiền thanh toán đã bao gồm cả phí thanh toán</value>
+  </data>
+  <data name="MessageNotUseAttachedCard" xml:space="preserve">
+    <value>Không thể sử dụng thẻ liên kết để thanh toán cho đơn hàng này. Vui lòng chọn số dư ví để thanh toán</value>
+  </data>
+  <data name="MessageNumberAllowed" xml:space="preserve">
+    <value>Đăng nhập sai vượt quá số lần cho phép. Mời bạn hôm sau quay lại</value>
+  </data>
+  <data name="MessagePayInternalCard" xml:space="preserve">
+    <value>Vui lòng chọn thẻ quốc tế để thanh toán</value>
+  </data>
+  <data name="MessageWalletUp" xml:space="preserve">
+    <value>Mã ODP đã được gửi đến số điện thoại/email đăng ký dịch vụ. Nếu không nhận được ODP, vui lòng soạn tin theo cú pháp PAY ODP gửi 19001530</value>
+  </data>
+  <data name="MonneyDonations" xml:space="preserve">
+    <value>Số tiền quyên góp</value>
+  </data>
+  <data name="MonneyInvalidSupport" xml:space="preserve">
+    <value>Số tiền ủng hộ không hợp lệ</value>
+  </data>
+  <data name="MonneyOfSupporter" xml:space="preserve">
+    <value>Số tiền ủng hộ</value>
+  </data>
+  <data name="MultiplesSupporter" xml:space="preserve">
+    <value>Giá trị ủng hộ phải là bội số của 1000</value>
+  </data>
+  <data name="NotEnoughMoney" xml:space="preserve">
+    <value>Số dư không đủ để thực hiện giao dịch</value>
+  </data>
+  <data name="ODP" xml:space="preserve">
+    <value>Mã ODP</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Mật khẩu</value>
+  </data>
+  <data name="PayeeInfomation" xml:space="preserve">
+    <value>Thông tin người nhận tiền</value>
+  </data>
+  <data name="Payment" xml:space="preserve">
+    <value>Thanh toán</value>
+  </data>
+  <data name="PaymentBalanceWallet" xml:space="preserve">
+    <value>Thanh toán qua số dư ví</value>
+  </data>
+  <data name="PaymentBankWallet" xml:space="preserve">
+    <value>Thanh toán qua ví đựng thẻ</value>
+  </data>
+  <data name="PaymentGateway" xml:space="preserve">
+    <value>CỔNG THANH TOÁN TRỰC TUYẾN</value>
+  </data>
+  <data name="PaymentImmediate" xml:space="preserve">
+    <value>Thanh toán ngay</value>
+  </data>
+  <data name="PaymentInterCard" xml:space="preserve">
+    <value>Thanh toán với thẻ quốc tế</value>
+  </data>
+  <data name="PaymentMethod" xml:space="preserve">
+    <value>Hình thức thanh toán</value>
+  </data>
+  <data name="PaymentViaInBanks" xml:space="preserve">
+    <value>Thanh toán với ngân hàng nội địa</value>
+  </data>
+  <data name="PhoneInvalid" xml:space="preserve">
+    <value>Số điện thoại không hợp lệ</value>
+  </data>
+  <data name="PhoneNumber" xml:space="preserve">
+    <value>Điện thoại</value>
+  </data>
+  <data name="PhoneTitle" xml:space="preserve">
+    <value>Số điện thoại là căn cứ rà soát,hoàn tiền.</value>
+  </data>
+  <data name="Register" xml:space="preserve">
+    <value>Đăng ký</value>
+  </data>
+  <data name="SectionBank" xml:space="preserve">
+    <value>Vui lòng chọn ngân hàng để thanh toán</value>
+  </data>
+  <data name="SelectPaymentMethod" xml:space="preserve">
+    <value>Vui lòng lựa chọn hình thức thanh toán</value>
+  </data>
+  <data name="SellerInfomation" xml:space="preserve">
+    <value>Thông tin nhà cung cấp</value>
+  </data>
+  <data name="SupporterInfo" xml:space="preserve">
+    <value>Thông tin người ủng hộ</value>
+  </data>
+  <data name="TotalMonney" xml:space="preserve">
+    <value>Tổng tiền </value>
+  </data>
+  <data name="ValueSupporter" xml:space="preserve">
+    <value>Giá trị ủng hộ phải từ 10000đ($0.5) trở lên</value>
+  </data>
+  <data name="Wallet" xml:space="preserve">
+    <value>Ví điện tử VTC Pay</value>
+  </data>
+  <data name="WalletUpper" xml:space="preserve">
+    <value>VÍ ĐIỆN TỬ VTC PAY</value>
+  </data>
+  <data name="OrderConfirm" xml:space="preserve">
+    <value>Xác nhận đơn hàng</value>
+  </data>
+  <data name="SupplierName" xml:space="preserve">
+    <value>Tên nhà cung cấp</value>
+  </data>
+  <data name="TermNote1" xml:space="preserve">
+    <value>Tôi đã đọc và đồng ý với</value>
+  </data>
+  <data name="TermNote2" xml:space="preserve">
+    <value>điều khoản sử dụng</value>
+  </data>
+  <data name="TermNote3" xml:space="preserve">
+    <value>Cổng thanh toán VTCPay</value>
+  </data>
+  <data name="Donation" xml:space="preserve">
+    <value>Quyên góp</value>
+  </data>
+  <data name="Support" xml:space="preserve">
+    <value>Ủng hộ</value>
+  </data>
+  <data name="btnConfirm" xml:space="preserve">
+    <value>thanh toán</value>
+  </data>
+  <data name="NotEnoughQuota" xml:space="preserve">
+    <value>Đơn hàng đã được thanh toán, vui lòng liên hệ với Nhà cung cấp dịch vụ.</value>
+  </data>
+</root>

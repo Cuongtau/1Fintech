@@ -1,0 +1,31 @@
+﻿@{
+    ViewBag.Title = "400 BadRequest";
+    Layout = "~/Views/Shared/_LayoutError.cshtml";
+}
+<style>
+    body {
+        background: #fff;
+    }
+    h2{color:#000;}
+</style>
+<!-- content -->
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="col-lg-12">
+            <div class="centering text-center">
+                <img src="@Html.Raw(Pay365.Utils.Config.Domain)images/error-page/Error400.jpg" width="400" />
+                <div class="text-center">
+                    <h2 class="without-margin">Don't worry. It's <span class="text-danger"><big>400 Bad Request</big></span> error only.</h2>
+                    <h4 class="text-danger">Something is broken, but we will fix it soon</h4>
+                </div>
+                <div class="text-center">
+                    <h3><small>Choose an option below</small></h3>
+                </div>
+                <hr>
+                <ul class="pager">
+                    <li><a href="@Html.Raw(Pay365.Utils.Config.Domain)">&larr; Home</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
