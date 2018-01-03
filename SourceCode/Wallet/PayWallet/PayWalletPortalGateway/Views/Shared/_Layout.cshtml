@@ -1,0 +1,103 @@
+﻿@{
+    var language = PayWallet.PortalGateway.Controllers.Utils.LanguageHelper.GetCurrentLanguage();
+    var languageId = PayWallet.PortalGateway.Controllers.Utils.LanguageHelper.GetLanguageId(language);
+
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no ">
+    <meta name="description" content="@(languageId == 1 ? "Ví điện tử - Cổng thanh toán điện tử Pay365" : "eWallet - Payment Gateway Pay365")" />
+    <meta name="keyword" content="@(languageId == 1 ? "Ví điện tử - Cổng thanh toán điện tử Pay365" : "eWallet - Payment Gateway Pay365")" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://beta-pay.vtc.vn/portalgateway/" />
+    <meta property="og:site_name" content="@(languageId == 1 ? "Ví điện tử - Cổng thanh toán điện tử VTC Pay" : "eWallet - Payment Gateway Pay365")" />
+    <meta property="og:image" content="@(languageId == 1 ? "Ví điện tử - Cổng thanh toán điện tử Pay365" : "eWallet - Payment Gateway Pay365")" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="300" />
+    <meta property="og:image:height" content="300" />
+    <meta property="og:title" content="@(languageId == 1 ? "Ví điện tử - Cổng thanh toán điện tử Pay365" : "eWallet - Payment Gateway Pay365")" />
+    <meta property="og:description" content="@(languageId == 1 ? "Ví điện tử - Cổng thanh toán điện tử Pay365" : "eWallet - Payment Gateway Pay365")" />
+
+    <link rel="shortcut icon" type="image/png" href="~/favicon.ico">
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="~/Scripts/ie-emulation-modes-warning.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    @Scripts.Render("~/bundles/libjquery")
+    <script src="~/Scripts/client-custom.min.js"></script>
+    <script type="text/javascript">
+        VerificationToken = '@PayWallet.PortalGateway.Controllers.CommonController.TokenHeaderValue()';
+    </script>
+</head>
+<body>
+
+    <div id="divPopup"></div>
+
+    <nav class="navbar navbar-default navbar-pay">
+        <div class="container container-pay">
+            <div class="col-md-6 col-xs-6 pay-logo"><a href="#" id="returnHome"><img width="180" height="54" src="~/images/logo-white.svg" alt=""></a></div>
+            @if (languageId == 1)//VI
+            {
+                <a href="javascript:;" onclick="utils.RedirectUriByLang('en')"><div class="col-md-2 col-xs-6 lang pull-right"></div></a>
+            }
+            else
+            {
+                <a href="javascript:;" onclick="utils.RedirectUriByLang('vi')"><div class=" col-md-2 col-xs-6 lang-en pull-right"></div></a>
+            }
+            <div class="col-md-4 col-xs-6 support pull-right">
+                <span class="glyphicon glyphicon-phone-alt"></span>&nbsp;093-4626-505
+            </div>
+        </div>
+    </nav>
+    <div class="container container-pay">
+
+
+        @RenderBody()
+
+        @*-------------Footer-------------*@
+        <div class="footer">
+            <div class="col-md-9">
+                @Resources.PayPortal.TitleFooter<br>
+                Hotline: 093-4626-505
+            </div>
+            <div class="col-md-3">
+                @*<img src="~/images/img3.png" alt="">*@
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+
+
+    @Scripts.Render("~/bundles/bootstrap")
+    
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="~/Scripts/ie10-viewport-bug-workaround.js"></script>
+    <script type="text/javascript">
+        var listResource = ['common.homepage'];
+        var currlang = utils.getCurrentLanguage();
+        i18n.init({
+            lng: currlang,
+            debug: true,
+            resGetPath: "@Html.Raw(PayWallet.Utils.Config.Domain)locales/__lng__/__ns__.json",
+            ns: { namespaces: listResource, defaultNs: 'common.homepage' }, //khai báo các file resource
+        },
+        function (t) {
+            $(".translang").i18n();
+        });
+
+    </script>
+    @RenderSection("scripts", required: false)
+</body>
+</html>

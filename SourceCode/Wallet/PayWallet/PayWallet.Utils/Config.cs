@@ -437,7 +437,10 @@ namespace PayWallet.Utils
                 "ondrop","oncopy","oncut","onpaste" };
             var checkWords = input.ToLower().Trim().Replace(" ", ""); //take out all space to protect < iframe
 
-            return (checkWords.StartsWith("<") || XSSHtmlEntities.Any(ent => checkWords.Contains(ent)) || XSSTagStringsForDoubleOpening.Any(tag => checkWords.Contains("<" + tag)) || XSSJSFunction.Any(evt => checkWords.Contains(evt + "=")));
+            return (checkWords.StartsWith("<") 
+                || XSSHtmlEntities.Any(ent => checkWords.Contains(ent)) 
+                || XSSTagStringsForDoubleOpening.Any(tag => checkWords.Contains("<" + tag)) 
+                || XSSJSFunction.Any(evt => checkWords.Contains(evt + "=")));
         }
 
 
