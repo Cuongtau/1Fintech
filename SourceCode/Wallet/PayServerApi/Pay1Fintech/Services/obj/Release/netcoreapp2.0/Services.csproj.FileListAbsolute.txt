@@ -1,0 +1,15 @@
+S:\Project\Pay365.Git\Shoppin\Services\bin\Release\netcoreapp2.0\Services.deps.json
+S:\Project\Pay365.Git\Shoppin\Services\bin\Release\netcoreapp2.0\Services.dll
+S:\Project\Pay365.Git\Shoppin\Services\bin\Release\netcoreapp2.0\Services.pdb
+S:\Project\Pay365.Git\Shoppin\Services\bin\Release\netcoreapp2.0\DAL.dll
+S:\Project\Pay365.Git\Shoppin\Services\bin\Release\netcoreapp2.0\DbHelpers.dll
+S:\Project\Pay365.Git\Shoppin\Services\bin\Release\netcoreapp2.0\UtilLibraries.dll
+S:\Project\Pay365.Git\Shoppin\Services\bin\Release\netcoreapp2.0\DAL.pdb
+S:\Project\Pay365.Git\Shoppin\Services\bin\Release\netcoreapp2.0\DbHelpers.pdb
+S:\Project\Pay365.Git\Shoppin\Services\bin\Release\netcoreapp2.0\UtilLibraries.pdb
+S:\Project\Pay365.Git\Shoppin\Services\obj\Release\netcoreapp2.0\Services.csprojResolveAssemblyReference.cache
+S:\Project\Pay365.Git\Shoppin\Services\obj\Release\netcoreapp2.0\Services.csproj.CoreCompileInputs.cache
+S:\Project\Pay365.Git\Shoppin\Services\obj\Release\netcoreapp2.0\Services.AssemblyInfoInputs.cache
+S:\Project\Pay365.Git\Shoppin\Services\obj\Release\netcoreapp2.0\Services.AssemblyInfo.cs
+S:\Project\Pay365.Git\Shoppin\Services\obj\Release\netcoreapp2.0\Services.dll
+S:\Project\Pay365.Git\Shoppin\Services\obj\Release\netcoreapp2.0\Services.pdb

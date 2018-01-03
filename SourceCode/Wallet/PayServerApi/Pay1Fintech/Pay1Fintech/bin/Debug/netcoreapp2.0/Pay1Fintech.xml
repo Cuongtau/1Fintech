@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Pay1Fintech</name>
+    </assembly>
+    <members>
+        <member name="M:Pay1Fintech.Controllers.AccountController.Register(DAL.Model.Account)">
+            <summary>
+            Register account
+            </summary>
+            <remarks>This API will create an account</remarks>
+            <param name="account">Object account, param at Data Type column</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,5 @@
+S:\Project\Pay365.Git\Shoppin\ShoppinOnlineWeb
+--output-path=obj\Release\netcoreapp2.0\
+--application-name=ShoppinOnline
+--content-root=S:\Project\Pay365.Git\Shoppin\ShoppinOnlineWeb
+--file=

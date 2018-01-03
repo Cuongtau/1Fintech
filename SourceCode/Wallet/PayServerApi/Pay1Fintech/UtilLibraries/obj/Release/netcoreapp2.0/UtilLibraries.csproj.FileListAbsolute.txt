@@ -1,0 +1,8 @@
+S:\Project\Pay365.Git\Shoppin\UtilLibraries\bin\Release\netcoreapp2.0\UtilLibraries.deps.json
+S:\Project\Pay365.Git\Shoppin\UtilLibraries\bin\Release\netcoreapp2.0\UtilLibraries.dll
+S:\Project\Pay365.Git\Shoppin\UtilLibraries\bin\Release\netcoreapp2.0\UtilLibraries.pdb
+S:\Project\Pay365.Git\Shoppin\UtilLibraries\obj\Release\netcoreapp2.0\UtilLibraries.csproj.CoreCompileInputs.cache
+S:\Project\Pay365.Git\Shoppin\UtilLibraries\obj\Release\netcoreapp2.0\UtilLibraries.AssemblyInfoInputs.cache
+S:\Project\Pay365.Git\Shoppin\UtilLibraries\obj\Release\netcoreapp2.0\UtilLibraries.AssemblyInfo.cs
+S:\Project\Pay365.Git\Shoppin\UtilLibraries\obj\Release\netcoreapp2.0\UtilLibraries.dll
+S:\Project\Pay365.Git\Shoppin\UtilLibraries\obj\Release\netcoreapp2.0\UtilLibraries.pdb

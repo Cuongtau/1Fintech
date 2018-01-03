@@ -1,0 +1,9 @@
+S:\Project\Pay365.Git\Shoppin\DbHelpers\bin\Release\netcoreapp2.0\DbHelpers.deps.json
+S:\Project\Pay365.Git\Shoppin\DbHelpers\bin\Release\netcoreapp2.0\DbHelpers.dll
+S:\Project\Pay365.Git\Shoppin\DbHelpers\bin\Release\netcoreapp2.0\DbHelpers.pdb
+S:\Project\Pay365.Git\Shoppin\DbHelpers\obj\Release\netcoreapp2.0\DbHelpers.csprojResolveAssemblyReference.cache
+S:\Project\Pay365.Git\Shoppin\DbHelpers\obj\Release\netcoreapp2.0\DbHelpers.csproj.CoreCompileInputs.cache
+S:\Project\Pay365.Git\Shoppin\DbHelpers\obj\Release\netcoreapp2.0\DbHelpers.AssemblyInfoInputs.cache
+S:\Project\Pay365.Git\Shoppin\DbHelpers\obj\Release\netcoreapp2.0\DbHelpers.AssemblyInfo.cs
+S:\Project\Pay365.Git\Shoppin\DbHelpers\obj\Release\netcoreapp2.0\DbHelpers.dll
+S:\Project\Pay365.Git\Shoppin\DbHelpers\obj\Release\netcoreapp2.0\DbHelpers.pdb
