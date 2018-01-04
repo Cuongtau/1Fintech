@@ -4,6 +4,7 @@ using System.Linq;
 using System.ServiceProcess;
 using System.Text;
 using System.Threading.Tasks;
+using Unity;
 
 namespace SMSGatewayWS
 {
@@ -14,10 +15,13 @@ namespace SMSGatewayWS
         /// </summary>
         static void Main()
         {
+            UnityContainer container = new UnityContainer();
+            UnityConfig.RegisterComponents(container);
             ServiceBase[] ServicesToRun;
             ServicesToRun = new ServiceBase[]
             {
-                new SMSGateway()
+                container.Resolve<SmsGatewayWs>()
+                //new SMSGateway()
             };
             ServiceBase.Run(ServicesToRun);
         }

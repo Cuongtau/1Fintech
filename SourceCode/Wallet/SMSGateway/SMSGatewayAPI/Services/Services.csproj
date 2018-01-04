@@ -41,8 +41,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IService\IDemoService.cs" />
+    <Compile Include="IService\ISMSGatewayService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service\DemoService.cs" />
+    <Compile Include="Service\SMSGatewayService.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
