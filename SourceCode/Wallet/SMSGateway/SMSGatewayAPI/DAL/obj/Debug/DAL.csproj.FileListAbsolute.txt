@@ -1,0 +1,5 @@
+D:\Bitbucket\1Fintech\SourceCode\SMSGateway\SMSGatewayAPI\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\Bitbucket\1Fintech\SourceCode\SMSGateway\SMSGatewayAPI\DAL\bin\Debug\DAL.dll
+D:\Bitbucket\1Fintech\SourceCode\SMSGateway\SMSGatewayAPI\DAL\bin\Debug\DAL.pdb
+D:\Bitbucket\1Fintech\SourceCode\SMSGateway\SMSGatewayAPI\DAL\obj\Debug\DAL.dll
+D:\Bitbucket\1Fintech\SourceCode\SMSGateway\SMSGatewayAPI\DAL\obj\Debug\DAL.pdb

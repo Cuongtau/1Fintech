@@ -1,0 +1,10 @@
+D:\Source\bitbucket\1Fintech\SourceCode\SMSGateway\SMSGatewayAPI\DBHelper\bin\Debug\DBHelper.dll
+D:\Source\bitbucket\1Fintech\SourceCode\SMSGateway\SMSGatewayAPI\DBHelper\bin\Debug\DBHelper.pdb
+D:\Source\bitbucket\1Fintech\SourceCode\SMSGateway\SMSGatewayAPI\DBHelper\obj\Debug\DBHelper.csproj.CoreCompileInputs.cache
+D:\Source\bitbucket\1Fintech\SourceCode\SMSGateway\SMSGatewayAPI\DBHelper\obj\Debug\DBHelper.dll
+D:\Source\bitbucket\1Fintech\SourceCode\SMSGateway\SMSGatewayAPI\DBHelper\obj\Debug\DBHelper.pdb
+D:\Bitbucket\1Fintech\SourceCode\SMSGateway\SMSGatewayAPI\DBHelper\bin\Debug\DBHelper.dll
+D:\Bitbucket\1Fintech\SourceCode\SMSGateway\SMSGatewayAPI\DBHelper\bin\Debug\DBHelper.pdb
+D:\Bitbucket\1Fintech\SourceCode\SMSGateway\SMSGatewayAPI\DBHelper\obj\Debug\DBHelper.csproj.CoreCompileInputs.cache
+D:\Bitbucket\1Fintech\SourceCode\SMSGateway\SMSGatewayAPI\DBHelper\obj\Debug\DBHelper.dll
+D:\Bitbucket\1Fintech\SourceCode\SMSGateway\SMSGatewayAPI\DBHelper\obj\Debug\DBHelper.pdb

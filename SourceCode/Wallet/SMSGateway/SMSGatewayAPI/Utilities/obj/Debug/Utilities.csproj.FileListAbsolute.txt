@@ -1,0 +1,11 @@
+D:\Source\bitbucket\1Fintech\SourceCode\SMSGateway\SMSGatewayAPI\Utilities\bin\Debug\Utilities.dll
+D:\Source\bitbucket\1Fintech\SourceCode\SMSGateway\SMSGatewayAPI\Utilities\bin\Debug\Utilities.pdb
+D:\Source\bitbucket\1Fintech\SourceCode\SMSGateway\SMSGatewayAPI\Utilities\obj\Debug\Utilities.csproj.CoreCompileInputs.cache
+D:\Source\bitbucket\1Fintech\SourceCode\SMSGateway\SMSGatewayAPI\Utilities\obj\Debug\Utilities.dll
+D:\Source\bitbucket\1Fintech\SourceCode\SMSGateway\SMSGatewayAPI\Utilities\obj\Debug\Utilities.pdb
+D:\Bitbucket\1Fintech\SourceCode\SMSGateway\SMSGatewayAPI\Utilities\bin\Debug\Utilities.dll
+D:\Bitbucket\1Fintech\SourceCode\SMSGateway\SMSGatewayAPI\Utilities\bin\Debug\Utilities.pdb
+D:\Bitbucket\1Fintech\SourceCode\SMSGateway\SMSGatewayAPI\Utilities\obj\Debug\Utilities.csprojResolveAssemblyReference.cache
+D:\Bitbucket\1Fintech\SourceCode\SMSGateway\SMSGatewayAPI\Utilities\obj\Debug\Utilities.csproj.CoreCompileInputs.cache
+D:\Bitbucket\1Fintech\SourceCode\SMSGateway\SMSGatewayAPI\Utilities\obj\Debug\Utilities.dll
+D:\Bitbucket\1Fintech\SourceCode\SMSGateway\SMSGatewayAPI\Utilities\obj\Debug\Utilities.pdb
