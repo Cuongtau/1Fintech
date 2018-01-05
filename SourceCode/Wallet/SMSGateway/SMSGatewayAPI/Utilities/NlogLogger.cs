@@ -18,7 +18,7 @@ namespace Utilities
             Logger = LogManager.GetCurrentClassLogger();
         }
 
-        public static Logger Logger { get; set; }
+        public static Logger Logger { get; set; } 
 
         public static void LogInfo(string message)
         {
