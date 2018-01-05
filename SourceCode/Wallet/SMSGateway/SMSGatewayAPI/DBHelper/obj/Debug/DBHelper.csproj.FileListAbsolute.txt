@@ -8,3 +8,8 @@ D:\Bitbucket\1Fintech\SourceCode\SMSGateway\SMSGatewayAPI\DBHelper\bin\Debug\DBH
 D:\Bitbucket\1Fintech\SourceCode\SMSGateway\SMSGatewayAPI\DBHelper\obj\Debug\DBHelper.csproj.CoreCompileInputs.cache
 D:\Bitbucket\1Fintech\SourceCode\SMSGateway\SMSGatewayAPI\DBHelper\obj\Debug\DBHelper.dll
 D:\Bitbucket\1Fintech\SourceCode\SMSGateway\SMSGatewayAPI\DBHelper\obj\Debug\DBHelper.pdb
+D:\1fintech\Github\SourceCode\Wallet\SMSGateway\SMSGatewayAPI\DBHelper\bin\Debug\DBHelper.dll
+D:\1fintech\Github\SourceCode\Wallet\SMSGateway\SMSGatewayAPI\DBHelper\bin\Debug\DBHelper.pdb
+D:\1fintech\Github\SourceCode\Wallet\SMSGateway\SMSGatewayAPI\DBHelper\obj\Debug\DBHelper.csproj.CoreCompileInputs.cache
+D:\1fintech\Github\SourceCode\Wallet\SMSGateway\SMSGatewayAPI\DBHelper\obj\Debug\DBHelper.dll
+D:\1fintech\Github\SourceCode\Wallet\SMSGateway\SMSGatewayAPI\DBHelper\obj\Debug\DBHelper.pdb

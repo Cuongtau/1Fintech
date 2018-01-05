@@ -2,6 +2,8 @@ using System.Web.Http;
 using System.Web.Mvc;
 using DAL.IRepository;
 using DAL.Repository;
+using Services.IService;
+using Services.Service;
 using Unity;
 using Unity.AspNet.Mvc;
 
@@ -31,7 +33,7 @@ namespace SMSGatewayAPI
         public static void RegisterTypes(IUnityContainer container)
         {
             container.RegisterType<IDemo, Demo>();
-            //container.RegisterType<IDemoService, DemoService>();
+            container.RegisterType<IDemoService, DemoService>();
         }
     }
 }

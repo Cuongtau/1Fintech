@@ -202,3 +202,7 @@ D:\Bitbucket\1Fintech\SourceCode\SMSGateway\SMSGatewayAPI\SMSGatewayAPI\obj\Debu
 D:\Bitbucket\1Fintech\SourceCode\SMSGateway\SMSGatewayAPI\SMSGatewayAPI\obj\Debug\SMSGatewayAPI.csproj.CoreCompileInputs.cache
 D:\Bitbucket\1Fintech\SourceCode\SMSGateway\SMSGatewayAPI\SMSGatewayAPI\obj\Debug\SMSGatewayAPI.dll
 D:\Bitbucket\1Fintech\SourceCode\SMSGateway\SMSGatewayAPI\SMSGatewayAPI\obj\Debug\SMSGatewayAPI.pdb
+D:\1fintech\Github\SourceCode\Wallet\SMSGateway\SMSGatewayAPI\SMSGatewayAPI\obj\Debug\SMSGatewayAPI.csprojResolveAssemblyReference.cache
+D:\1fintech\Github\SourceCode\Wallet\SMSGateway\SMSGatewayAPI\SMSGatewayAPI\obj\Debug\SMSGatewayAPI.csproj.CoreCompileInputs.cache
+D:\1fintech\Github\SourceCode\Wallet\SMSGateway\SMSGatewayAPI\SMSGatewayAPI\obj\Debug\SMSGatewayAPI.dll
+D:\1fintech\Github\SourceCode\Wallet\SMSGateway\SMSGatewayAPI\SMSGatewayAPI\obj\Debug\SMSGatewayAPI.pdb
