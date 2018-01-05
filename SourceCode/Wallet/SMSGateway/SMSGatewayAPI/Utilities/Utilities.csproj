@@ -37,6 +37,7 @@
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,9 +47,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Config.cs" />
+    <Compile Include="HttpHelper.cs" />
     <Compile Include="NlogLogger.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Security\Security.cs" />
+    <Compile Include="WebPost.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Services\" />

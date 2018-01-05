@@ -6,13 +6,16 @@ using System.ComponentModel;
 using System.Configuration;
 using System.Data;
 using System.Diagnostics;
+using System.IO;
 using System.Linq;
+using System.Net;
 using System.Reflection;
 using System.ServiceProcess;
 using System.Text;
 using System.Threading.Tasks;
 using System.Timers;
 using Unity;
+using Utilities;
 using Timer = System.Timers.Timer;
 
 namespace SMSGatewayWS
@@ -29,11 +32,8 @@ namespace SMSGatewayWS
             var service = _container.Resolve<DemoService>();
             service.GetStringDI();
         }
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="args"></param>
-        protected override void OnStart(string[] args) 
+
+        protected override void OnStart(string[] args)
         {
             try
             {
@@ -45,7 +45,7 @@ namespace SMSGatewayWS
             }
             catch (Exception ex)
             {
-                // Log
+                NLogLogger.PublishException(ex);
             }
         }
 
@@ -59,10 +59,20 @@ namespace SMSGatewayWS
 
         }
 
-        public void Send_MT()
+        public void Send_MO()
         {
             var service = _container.Resolve<SMSGatewayService>();
+            var totalRow = 0;
+            // lấy MO
+            var list = service.GetTopData_MO(0, 1000, ref totalRow);
+            if (list == null || list.Count <= 0)
+            {
+                NLogLogger.LogInfo("------Get Data MO null");
+            }
 
+            var url = ConfigurationManager.AppSettings["URL_PartnerAPI"];
+            var a = "";
+            var sendData = HttpHelper.SendPost(a, url);
 
         }
 

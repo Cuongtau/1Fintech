@@ -79,7 +79,9 @@
     <Compile Include="UnityConfig.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -90,6 +92,10 @@
     <ProjectReference Include="..\Services\Services.csproj">
       <Project>{79827476-af04-4393-8a66-ef0aa4730c0c}</Project>
       <Name>Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utilities\Utilities.csproj">
+      <Project>{75D01397-28FE-4B84-8680-84D784BDAB5B}</Project>
+      <Name>Utilities</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

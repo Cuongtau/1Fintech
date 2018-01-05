@@ -13,8 +13,8 @@ namespace SMSGatewayWS
             container.RegisterType<IDemo, Demo>();
             container.RegisterType<IDemoService, DemoService>();
 
-            container.RegisterType<ISMSGateway, DAL.Repository.SMSGateway>();
-            container.RegisterType<ISMSGatewayService, SMSGatewayService>();           
+            container.RegisterType<ISMSGateway, SMSGateway>();
+            container.RegisterType<ISMSGatewayService, SMSGatewayService>();
         }
     }
 }
