@@ -16,3 +16,16 @@ D:\1fintech\Github\SourceCode\Wallet\SMSGateway\SMSGatewayAPI\DAL\obj\Debug\DAL.
 D:\1fintech\Github\SourceCode\Wallet\SMSGateway\SMSGatewayAPI\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
 D:\1fintech\Github\SourceCode\Wallet\SMSGateway\SMSGatewayAPI\DAL\obj\Debug\DAL.dll
 D:\1fintech\Github\SourceCode\Wallet\SMSGateway\SMSGatewayAPI\DAL\obj\Debug\DAL.pdb
+D:\GitHub\1Fintech\SourceCode\Wallet\SMSGateway\SMSGatewayAPI\DAL\bin\Debug\DAL.dll
+D:\GitHub\1Fintech\SourceCode\Wallet\SMSGateway\SMSGatewayAPI\DAL\bin\Debug\DAL.pdb
+D:\GitHub\1Fintech\SourceCode\Wallet\SMSGateway\SMSGatewayAPI\DAL\bin\Debug\DBHelper.dll
+D:\GitHub\1Fintech\SourceCode\Wallet\SMSGateway\SMSGatewayAPI\DAL\bin\Debug\Utilities.dll
+D:\GitHub\1Fintech\SourceCode\Wallet\SMSGateway\SMSGatewayAPI\DAL\bin\Debug\NLog.dll
+D:\GitHub\1Fintech\SourceCode\Wallet\SMSGateway\SMSGatewayAPI\DAL\bin\Debug\System.Net.Http.Formatting.dll
+D:\GitHub\1Fintech\SourceCode\Wallet\SMSGateway\SMSGatewayAPI\DAL\bin\Debug\Newtonsoft.Json.dll
+D:\GitHub\1Fintech\SourceCode\Wallet\SMSGateway\SMSGatewayAPI\DAL\bin\Debug\DBHelper.pdb
+D:\GitHub\1Fintech\SourceCode\Wallet\SMSGateway\SMSGatewayAPI\DAL\bin\Debug\Utilities.pdb
+D:\GitHub\1Fintech\SourceCode\Wallet\SMSGateway\SMSGatewayAPI\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+D:\GitHub\1Fintech\SourceCode\Wallet\SMSGateway\SMSGatewayAPI\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\GitHub\1Fintech\SourceCode\Wallet\SMSGateway\SMSGatewayAPI\DAL\obj\Debug\DAL.dll
+D:\GitHub\1Fintech\SourceCode\Wallet\SMSGateway\SMSGatewayAPI\DAL\obj\Debug\DAL.pdb
