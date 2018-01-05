@@ -16,3 +16,10 @@ D:\1fintech\Github\SourceCode\Wallet\SMSGateway\SMSGatewayAPI\Utilities\obj\Debu
 D:\1fintech\Github\SourceCode\Wallet\SMSGateway\SMSGatewayAPI\Utilities\obj\Debug\Utilities.csproj.CoreCompileInputs.cache
 D:\1fintech\Github\SourceCode\Wallet\SMSGateway\SMSGatewayAPI\Utilities\obj\Debug\Utilities.dll
 D:\1fintech\Github\SourceCode\Wallet\SMSGateway\SMSGatewayAPI\Utilities\obj\Debug\Utilities.pdb
+D:\GitHub\1Fintech\SourceCode\Wallet\SMSGateway\SMSGatewayAPI\Utilities\bin\Debug\Utilities.dll
+D:\GitHub\1Fintech\SourceCode\Wallet\SMSGateway\SMSGatewayAPI\Utilities\bin\Debug\Utilities.pdb
+D:\GitHub\1Fintech\SourceCode\Wallet\SMSGateway\SMSGatewayAPI\Utilities\bin\Debug\Newtonsoft.Json.dll
+D:\GitHub\1Fintech\SourceCode\Wallet\SMSGateway\SMSGatewayAPI\Utilities\obj\Debug\Utilities.csprojResolveAssemblyReference.cache
+D:\GitHub\1Fintech\SourceCode\Wallet\SMSGateway\SMSGatewayAPI\Utilities\obj\Debug\Utilities.csproj.CoreCompileInputs.cache
+D:\GitHub\1Fintech\SourceCode\Wallet\SMSGateway\SMSGatewayAPI\Utilities\obj\Debug\Utilities.dll
+D:\GitHub\1Fintech\SourceCode\Wallet\SMSGateway\SMSGatewayAPI\Utilities\obj\Debug\Utilities.pdb

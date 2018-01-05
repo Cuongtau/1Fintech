@@ -56,26 +56,37 @@ namespace SMSGatewayWS
 
         public void StartWork()
         {
-
+            Send_MO();
         }
 
         public void Send_MO()
         {
+            NLogLogger.LogInfo("Vao SendMO");
             var service = _container.Resolve<SMSGatewayService>();
             var totalRow = 0;
             // lấy MO
-            var list = service.GetTopData_MO(0, 1000, ref totalRow);
+            var list = service.GetTopData_MO(0, 1000, ref totalRow).ToList();
             if (list == null || list.Count <= 0)
             {
                 NLogLogger.LogInfo("------Get Data MO null");
             }
+            return;
 
-            var url = ConfigurationManager.AppSettings["URL_PartnerAPI"];
-            var a = "";
-            var sendData = HttpHelper.SendPost(a, url);
+            foreach (var obj in list)
+            {
+                var url_Api = ConfigurationManager.AppSettings["URL_PartnerAPI"];
+                var param = new
+                {
 
+                };
+
+                var response = HttpHelper.PostProxy(param, url_Api);
+
+                var res = response.Content.ReadAsStringAsync().Result;
+
+                NLogLogger.LogInfo($"Send MO to Partner {res}");
+            }
         }
-
 
         protected override void OnStop()
         {
