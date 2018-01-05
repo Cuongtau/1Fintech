@@ -33,6 +33,28 @@ namespace Utilities
             };
         }
 
+        public static HttpResponseMessage PostProxy(object model, string api)
+        {
+
+            HttpClientHandler handler = new HttpClientHandler();
+
+            var client = new HttpClient(handler);
+            client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+            HttpResponseMessage response = client.PostAsJsonAsync(api, model).Result;
+            return response;
+        }
+
+        public static HttpResponseMessage GetProxy(string api)
+        {
+            HttpClientHandler handler = new HttpClientHandler();
+
+            var client = new HttpClient(handler);
+            client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+            HttpResponseMessage response = client.GetAsync(api).Result;
+            return response;
+
+        }
+
         public static string SendPost(string postData, string url)
         {
             System.Text.UTF8Encoding encoding = new System.Text.UTF8Encoding();
