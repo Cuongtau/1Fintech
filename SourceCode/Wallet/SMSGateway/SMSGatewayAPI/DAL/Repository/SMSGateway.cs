@@ -109,6 +109,44 @@ namespace DAL.Repository
         }
 
 
+        public int SMS_Confirm_Response_SMS_MO(long MO_Id, Int16 statusProcess)
+        {
+            try
+            {
+                var pars = new SqlParameter[3];
+                pars[0] = new SqlParameter("@_MO_ID", MO_Id <= 0 ? DBNull.Value : (object)MO_Id);
+                pars[1] = new SqlParameter("@_StatusProcess", statusProcess < 1 ? DBNull.Value : (object)statusProcess);
+                pars[2] = new SqlParameter("@_ResponseStatus", SqlDbType.Int) { Direction = ParameterDirection.Output };
+                new DBHelper.DBHelper(Config.SmsGatewayConnectionString).ExecuteNonQuerySP("SP_SMS_MO_ConfirmResponse", pars);
+                return Convert.ToInt32(pars[2].Value);
+            }
+            catch (Exception ex)
+            {
+                NLogLogger.LogInfo(ex.ToString());
+                return -696;
+            }
+        }
+
+
+        public int SMS_Confirm_Response_SMS_MT(long MT_Id, Int16 statusProcess, int isResend)
+        {
+            try 
+            {
+                var pars = new SqlParameter[4];
+                pars[0] = new SqlParameter("@_MT_ID", MT_Id <= 0 ? DBNull.Value : (object)MT_Id);
+                pars[1] = new SqlParameter("@_StatusProcess", statusProcess < 1 ? DBNull.Value : (object)statusProcess);
+                pars[2] = new SqlParameter("@_IsResend", statusProcess <= 0 ? DBNull.Value : (object)isResend);
+                pars[3] = new SqlParameter("@_ResponseStatus", SqlDbType.Int) { Direction = ParameterDirection.Output };
+                new DBHelper.DBHelper(Config.SmsGatewayConnectionString).ExecuteNonQuerySP("SP_SMS_MO_ConfirmResponse", pars);
+                return Convert.ToInt32(pars[3].Value);
+            }
+            catch (Exception ex)
+            {
+                NLogLogger.LogInfo(ex.ToString());
+                return -696;
+            }
+        }
+
 
     }
 }

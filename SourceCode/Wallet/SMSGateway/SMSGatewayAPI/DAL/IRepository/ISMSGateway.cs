@@ -18,5 +18,9 @@ namespace DAL.IRepository
         List<SMS_MO> SMS_MO_GetTop(Int16 status, int top, ref int totalRow);
 
         List<SMS_MT> SMS_MT_GetTop(Int16 status, int top, ref int totalRow);
+
+        int SMS_Confirm_Response_SMS_MO(long MO_Id, Int16 statusProcess);
+
+        int SMS_Confirm_Response_SMS_MT(long MT_Id, Int16 statusProcess, int isResend);
     }
 }
